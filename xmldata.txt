@@ -1,0 +1,107 @@
+{'xfunctions': {'function': <xfunction main="hello" xname="function">
+<div>
+<xfunction xname="print" xparams="string:string">
+<xout>
+<xecho xt-string="string"/>
+</xout>
+</xfunction>
+<xfunction xname="repeat" xparams="times:number,who:xt-function,string:string">
+<xfor xtimes="xt-times">
+<xcall who="xt-print"/>
+</xfor>
+</xfunction>
+<xcall who="xt-repeat" xstring="hello" xtimes="6"/>
+</div>
+<xout>
+<hello>
+            PS D:\site_else\lmx.xml&gt; pip install defusedxml
+            WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection
+            broken
+            by 'NewConnectionError('&lt;pip._vendor.urllib3.connection.HTTPSConnection object at 0x00000210751A6390&gt;:
+            Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /simple/defusedxml/
+            WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection
+            broken
+            by 'NewConnectionError('&lt;pip._vendor.urllib3.connection.HTTPSConnection object at 0x00000210751A5210&gt;:
+            Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /simple/defusedxml/
+            WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection
+            broken
+            by 'NewConnectionError('&lt;pip._vendor.urllib3.connection.HTTPSConnection object at 0x00000210751A6B50&gt;:
+            Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /simple/defusedxml/
+            WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection
+            broken
+            by 'NewConnectionError('&lt;pip._vendor.urllib3.connection.HTTPSConnection object at 0x00000210751A7450&gt;:
+            Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /simple/defusedxml/
+            WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection
+            broken
+            by 'NewConnectionError('&lt;pip._vendor.urllib3.connection.HTTPSConnection object at 0x00000210751A7F10&gt;:
+            Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /simple/defusedxml/
+            ERROR: Could not find a version that satisfies the requirement defusedxml (from versions: none)
+            ERROR: No matching distribution found for defusedxml
+        </hello>
+</xout>
+</xfunction>},
+ 'xout': ["'\\n'",
+          '<div>\n'
+          '<xfunction xname="print" xparams="string:string">\n'
+          '<xout>\n'
+          '<xecho xt-string="string"/>\n'
+          '</xout>\n'
+          '</xfunction>\n'
+          '<xfunction xname="repeat" '
+          'xparams="times:number,who:xt-function,string:string">\n'
+          '<xfor xtimes="xt-times">\n'
+          '<xcall who="xt-print"/>\n'
+          '</xfor>\n'
+          '</xfunction>\n'
+          '<xcall who="xt-repeat" xstring="hello" xtimes="6"/>\n'
+          '</div>',
+          "'\\n'",
+          '<xout>\n'
+          '<hello>\n'
+          '            PS D:\\site_else\\lmx.xml&gt; pip install defusedxml\n'
+          '            WARNING: Retrying (Retry(total=4, connect=None, '
+          'read=None, redirect=None, status=None)) after connection\n'
+          '            broken\n'
+          '            by '
+          "'NewConnectionError('&lt;pip._vendor.urllib3.connection.HTTPSConnection "
+          'object at 0x00000210751A6390&gt;:\n'
+          '            Failed to establish a new connection: [Errno 11001] '
+          "getaddrinfo failed')': /simple/defusedxml/\n"
+          '            WARNING: Retrying (Retry(total=3, connect=None, '
+          'read=None, redirect=None, status=None)) after connection\n'
+          '            broken\n'
+          '            by '
+          "'NewConnectionError('&lt;pip._vendor.urllib3.connection.HTTPSConnection "
+          'object at 0x00000210751A5210&gt;:\n'
+          '            Failed to establish a new connection: [Errno 11001] '
+          "getaddrinfo failed')': /simple/defusedxml/\n"
+          '            WARNING: Retrying (Retry(total=2, connect=None, '
+          'read=None, redirect=None, status=None)) after connection\n'
+          '            broken\n'
+          '            by '
+          "'NewConnectionError('&lt;pip._vendor.urllib3.connection.HTTPSConnection "
+          'object at 0x00000210751A6B50&gt;:\n'
+          '            Failed to establish a new connection: [Errno 11001] '
+          "getaddrinfo failed')': /simple/defusedxml/\n"
+          '            WARNING: Retrying (Retry(total=1, connect=None, '
+          'read=None, redirect=None, status=None)) after connection\n'
+          '            broken\n'
+          '            by '
+          "'NewConnectionError('&lt;pip._vendor.urllib3.connection.HTTPSConnection "
+          'object at 0x00000210751A7450&gt;:\n'
+          '            Failed to establish a new connection: [Errno 11001] '
+          "getaddrinfo failed')': /simple/defusedxml/\n"
+          '            WARNING: Retrying (Retry(total=0, connect=None, '
+          'read=None, redirect=None, status=None)) after connection\n'
+          '            broken\n'
+          '            by '
+          "'NewConnectionError('&lt;pip._vendor.urllib3.connection.HTTPSConnection "
+          'object at 0x00000210751A7F10&gt;:\n'
+          '            Failed to establish a new connection: [Errno 11001] '
+          "getaddrinfo failed')': /simple/defusedxml/\n"
+          '            ERROR: Could not find a version that satisfies the '
+          'requirement defusedxml (from versions: none)\n'
+          '            ERROR: No matching distribution found for defusedxml\n'
+          '        </hello>\n'
+          '</xout>',
+          "'\\n'"]}
