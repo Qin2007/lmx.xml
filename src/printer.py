@@ -1,3 +1,6 @@
+pass
+
+
 class Printer:
     def __init__(self, openf):
         self.openf = openf
