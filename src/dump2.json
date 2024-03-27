@@ -2,40 +2,78 @@
     "xml": {
         "ElementName": "Hello",
         "xmlns": null,
-        "xml": "<Hello>hello<span>echo</span><span>1<span>world</span>2</span>WND!</Hello>",
         "children": [
             "hello",
             {
                 "ElementName": "span",
                 "xmlns": null,
-                "xml": "<span>echo</span>",
                 "children": [
                     "echo"
                 ],
-                "attrs": {}
+                "attrs": {},
+                "striped": [
+                    "echo"
+                ],
+                "strings": [
+                    "echo"
+                ],
+                "xml": "<span>echo</span>"
             },
             {
                 "ElementName": "span",
                 "xmlns": null,
-                "xml": "<span>1<span>world</span>2</span>",
                 "children": [
                     "1",
                     {
                         "ElementName": "span",
                         "xmlns": null,
-                        "xml": "<span>world</span>",
                         "children": [
                             "world"
                         ],
-                        "attrs": {}
+                        "attrs": {},
+                        "striped": [
+                            "world"
+                        ],
+                        "strings": [
+                            "world"
+                        ],
+                        "xml": "<span>world</span>"
                     },
                     "2"
                 ],
-                "attrs": {}
+                "attrs": {},
+                "striped": [
+                    "1",
+                    "world",
+                    "2"
+                ],
+                "strings": [
+                    "1",
+                    "world",
+                    "2"
+                ],
+                "xml": "<span>1<span>world</span>2</span>"
             },
             "WND!"
         ],
-        "attrs": {}
+        "attrs": {},
+        "striped": [
+            "hello",
+            "echo",
+            "1",
+            "world",
+            "2",
+            "WND!"
+        ],
+        "strings": [
+            "hello",
+            "echo",
+            "1",
+            "world",
+            "2",
+            "WND!"
+        ],
+        "xml": "<Hello>hello<span>echo</span><span>1<span>world</span>2</span>WND!</Hello>"
     },
     "xfuncs": {}
 }

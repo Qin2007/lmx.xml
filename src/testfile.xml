@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<cf:xfunction xname="main" xmlns:cf="https://ant.ractoc.com/xmlns/lmx/0/0/0/index.doctype">
+<cf:xfunction xname="main" xmlns:cf="https://ant.ractoc.com/xmlns/lmx/0/0/0/index.doctype"
+              xml:space="preserve">
     <cf:xout>hello world</cf:xout>
     <cf:xfunction xname="echoit">
         <cf:xfor var="x" start="0" stop="52" step="3">

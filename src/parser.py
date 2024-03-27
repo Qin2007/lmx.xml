@@ -50,9 +50,11 @@ class XScripter:
                 return str(element)
             if element is None:
                 return None
-            obj = {'ElementName': element.name, 'xmlns': element.namespace, 'xml': repr(element),
+            obj = {'ElementName': element.name, 'xmlns': element.namespace,
                    'children': [xml_element_to_obj(child) for child in element.children],
-                   'attrs': {attr: value for attr, value in element.attrs.items()}, }
+                   'attrs': {attr: value for attr, value in element.attrs.items()},
+                   'striped': [i for i in element.stripped_strings],
+                   'strings': [i for i in element.strings], 'xml': repr(element)}
             obj['children'] = [i for i in obj['children'] if i is not None and i != '\n']
             return obj
 
@@ -61,9 +63,9 @@ class XScripter:
     def _exec(self, exl, printer, vardict):
         match (exl['ElementName']):
             case 'xout':
-                printer.out(self._xout(exl['children']))
+                self._xout(exl, 'xml', printer)
             case 'xecho':
-                printer.out(self._xout(f"{vardict[exl['attrs']['var']]}"))
+                self._xout(f"{vardict[exl['attrs']['var']]}", 'str', printer)
             case 'xcall':
                 self._callfunc(exl['attrs']['xname'], printer)
             case 'xfor':
@@ -94,19 +96,19 @@ class XScripter:
                 self._xmlstart(child, printer, False)
         else:
             if toplvl:
-                printer.out(self._xout(exl['children']))
+                self._xout(exl, 'xml', printer)
         pass
 
-    def _xout(self, lixt):
+    def _xout(self, lixt, type_, printer):
         (lambda _: _)(self)
         # return ' '.join((i if isinstance(i, str) else (self._xout(i['xml']))) for i in lixt) + '\n'
-        rtrm = list()
-        for i in lixt:
-            if isinstance(i, str):
-                rtrm.append(i)
-            else:
-                rtrm.append(i['xml'])
-        return ' '.join(i.replace('\\n', '\n') for i in rtrm) + '\n'
+        match type_:
+            case 'xml':
+                printer.out(lixt['xml'])
+            case 'str':
+                printer.out(lixt)
+
+        return ''
 
     def xmlrun(self):
         with (open(self.conf['out.txt'], 'wt', encoding='utf-8') as outfile,

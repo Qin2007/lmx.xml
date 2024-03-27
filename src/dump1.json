@@ -2,35 +2,40 @@
     "xml": {
         "ElementName": "xfunction",
         "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.doctype",
-        "xml": "<cf:xfunction xmlns:cf=\"https://ant.ractoc.com/xmlns/lmx/0/0/0/index.doctype\" xname=\"main\">\n<cf:xout>hello world</cf:xout>\n<cf:xfunction xname=\"echoit\">\n<cf:xfor start=\"0\" step=\"3\" stop=\"52\" var=\"x\">\n<cf:xecho var=\"x\"/>\n</cf:xfor>\n</cf:xfunction>\n<cf:xcall xname=\"echoit\"/>\n<cf:xout>hello world</cf:xout>\n</cf:xfunction>",
         "children": [
             {
                 "ElementName": "xout",
                 "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.doctype",
-                "xml": "<cf:xout>hello world</cf:xout>",
                 "children": [
                     "hello world"
                 ],
-                "attrs": {}
+                "attrs": {},
+                "striped": [
+                    "hello world"
+                ],
+                "strings": [
+                    "hello world"
+                ],
+                "xml": "<cf:xout>hello world</cf:xout>"
             },
             {
                 "ElementName": "xfunction",
                 "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.doctype",
-                "xml": "<cf:xfunction xname=\"echoit\">\n<cf:xfor start=\"0\" step=\"3\" stop=\"52\" var=\"x\">\n<cf:xecho var=\"x\"/>\n</cf:xfor>\n</cf:xfunction>",
                 "children": [
                     {
                         "ElementName": "xfor",
                         "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.doctype",
-                        "xml": "<cf:xfor start=\"0\" step=\"3\" stop=\"52\" var=\"x\">\n<cf:xecho var=\"x\"/>\n</cf:xfor>",
                         "children": [
                             {
                                 "ElementName": "xecho",
                                 "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.doctype",
-                                "xml": "<cf:xecho var=\"x\"/>",
                                 "children": [],
                                 "attrs": {
                                     "var": "x"
-                                }
+                                },
+                                "striped": [],
+                                "strings": [],
+                                "xml": "<cf:xecho var=\"x\"/>"
                             }
                         ],
                         "attrs": {
@@ -38,12 +43,26 @@
                             "start": "0",
                             "stop": "52",
                             "step": "3"
-                        }
+                        },
+                        "striped": [],
+                        "strings": [
+                            "\n",
+                            "\n"
+                        ],
+                        "xml": "<cf:xfor start=\"0\" step=\"3\" stop=\"52\" var=\"x\">\n<cf:xecho var=\"x\"/>\n</cf:xfor>"
                     }
                 ],
                 "attrs": {
                     "xname": "echoit"
                 },
+                "striped": [],
+                "strings": [
+                    "\n",
+                    "\n",
+                    "\n",
+                    "\n"
+                ],
+                "xml": "<cf:xfunction xname=\"echoit\">\n<cf:xfor start=\"0\" step=\"3\" stop=\"52\" var=\"x\">\n<cf:xecho var=\"x\"/>\n</cf:xfor>\n</cf:xfunction>",
                 "vardict": {
                     "x": 51
                 }
@@ -51,61 +70,93 @@
             {
                 "ElementName": "xcall",
                 "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.doctype",
-                "xml": "<cf:xcall xname=\"echoit\"/>",
                 "children": [],
                 "attrs": {
                     "xname": "echoit"
-                }
+                },
+                "striped": [],
+                "strings": [],
+                "xml": "<cf:xcall xname=\"echoit\"/>"
             },
             {
                 "ElementName": "xout",
                 "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.doctype",
-                "xml": "<cf:xout>hello world</cf:xout>",
                 "children": [
                     "hello world"
                 ],
-                "attrs": {}
+                "attrs": {},
+                "striped": [
+                    "hello world"
+                ],
+                "strings": [
+                    "hello world"
+                ],
+                "xml": "<cf:xout>hello world</cf:xout>"
             }
         ],
         "attrs": {
             "xname": "main",
+            "xml:space": "preserve",
             "xmlns:cf": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.doctype"
         },
+        "striped": [
+            "hello world",
+            "hello world"
+        ],
+        "strings": [
+            "\n",
+            "hello world",
+            "\n",
+            "\n",
+            "\n",
+            "\n",
+            "\n",
+            "\n",
+            "\n",
+            "hello world",
+            "\n"
+        ],
+        "xml": "<cf:xfunction xml:space=\"preserve\" xmlns:cf=\"https://ant.ractoc.com/xmlns/lmx/0/0/0/index.doctype\" xname=\"main\">\n<cf:xout>hello world</cf:xout>\n<cf:xfunction xname=\"echoit\">\n<cf:xfor start=\"0\" step=\"3\" stop=\"52\" var=\"x\">\n<cf:xecho var=\"x\"/>\n</cf:xfor>\n</cf:xfunction>\n<cf:xcall xname=\"echoit\"/>\n<cf:xout>hello world</cf:xout>\n</cf:xfunction>",
         "vardict": {}
     },
     "xfuncs": {
         "main": {
             "ElementName": "xfunction",
             "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.doctype",
-            "xml": "<cf:xfunction xmlns:cf=\"https://ant.ractoc.com/xmlns/lmx/0/0/0/index.doctype\" xname=\"main\">\n<cf:xout>hello world</cf:xout>\n<cf:xfunction xname=\"echoit\">\n<cf:xfor start=\"0\" step=\"3\" stop=\"52\" var=\"x\">\n<cf:xecho var=\"x\"/>\n</cf:xfor>\n</cf:xfunction>\n<cf:xcall xname=\"echoit\"/>\n<cf:xout>hello world</cf:xout>\n</cf:xfunction>",
             "children": [
                 {
                     "ElementName": "xout",
                     "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.doctype",
-                    "xml": "<cf:xout>hello world</cf:xout>",
                     "children": [
                         "hello world"
                     ],
-                    "attrs": {}
+                    "attrs": {},
+                    "striped": [
+                        "hello world"
+                    ],
+                    "strings": [
+                        "hello world"
+                    ],
+                    "xml": "<cf:xout>hello world</cf:xout>"
                 },
                 {
                     "ElementName": "xfunction",
                     "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.doctype",
-                    "xml": "<cf:xfunction xname=\"echoit\">\n<cf:xfor start=\"0\" step=\"3\" stop=\"52\" var=\"x\">\n<cf:xecho var=\"x\"/>\n</cf:xfor>\n</cf:xfunction>",
                     "children": [
                         {
                             "ElementName": "xfor",
                             "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.doctype",
-                            "xml": "<cf:xfor start=\"0\" step=\"3\" stop=\"52\" var=\"x\">\n<cf:xecho var=\"x\"/>\n</cf:xfor>",
                             "children": [
                                 {
                                     "ElementName": "xecho",
                                     "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.doctype",
-                                    "xml": "<cf:xecho var=\"x\"/>",
                                     "children": [],
                                     "attrs": {
                                         "var": "x"
-                                    }
+                                    },
+                                    "striped": [],
+                                    "strings": [],
+                                    "xml": "<cf:xecho var=\"x\"/>"
                                 }
                             ],
                             "attrs": {
@@ -113,12 +164,26 @@
                                 "start": "0",
                                 "stop": "52",
                                 "step": "3"
-                            }
+                            },
+                            "striped": [],
+                            "strings": [
+                                "\n",
+                                "\n"
+                            ],
+                            "xml": "<cf:xfor start=\"0\" step=\"3\" stop=\"52\" var=\"x\">\n<cf:xecho var=\"x\"/>\n</cf:xfor>"
                         }
                     ],
                     "attrs": {
                         "xname": "echoit"
                     },
+                    "striped": [],
+                    "strings": [
+                        "\n",
+                        "\n",
+                        "\n",
+                        "\n"
+                    ],
+                    "xml": "<cf:xfunction xname=\"echoit\">\n<cf:xfor start=\"0\" step=\"3\" stop=\"52\" var=\"x\">\n<cf:xecho var=\"x\"/>\n</cf:xfor>\n</cf:xfunction>",
                     "vardict": {
                         "x": 51
                     }
@@ -126,46 +191,73 @@
                 {
                     "ElementName": "xcall",
                     "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.doctype",
-                    "xml": "<cf:xcall xname=\"echoit\"/>",
                     "children": [],
                     "attrs": {
                         "xname": "echoit"
-                    }
+                    },
+                    "striped": [],
+                    "strings": [],
+                    "xml": "<cf:xcall xname=\"echoit\"/>"
                 },
                 {
                     "ElementName": "xout",
                     "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.doctype",
-                    "xml": "<cf:xout>hello world</cf:xout>",
                     "children": [
                         "hello world"
                     ],
-                    "attrs": {}
+                    "attrs": {},
+                    "striped": [
+                        "hello world"
+                    ],
+                    "strings": [
+                        "hello world"
+                    ],
+                    "xml": "<cf:xout>hello world</cf:xout>"
                 }
             ],
             "attrs": {
                 "xname": "main",
+                "xml:space": "preserve",
                 "xmlns:cf": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.doctype"
             },
+            "striped": [
+                "hello world",
+                "hello world"
+            ],
+            "strings": [
+                "\n",
+                "hello world",
+                "\n",
+                "\n",
+                "\n",
+                "\n",
+                "\n",
+                "\n",
+                "\n",
+                "hello world",
+                "\n"
+            ],
+            "xml": "<cf:xfunction xml:space=\"preserve\" xmlns:cf=\"https://ant.ractoc.com/xmlns/lmx/0/0/0/index.doctype\" xname=\"main\">\n<cf:xout>hello world</cf:xout>\n<cf:xfunction xname=\"echoit\">\n<cf:xfor start=\"0\" step=\"3\" stop=\"52\" var=\"x\">\n<cf:xecho var=\"x\"/>\n</cf:xfor>\n</cf:xfunction>\n<cf:xcall xname=\"echoit\"/>\n<cf:xout>hello world</cf:xout>\n</cf:xfunction>",
             "vardict": {}
         },
         "echoit": {
             "ElementName": "xfunction",
             "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.doctype",
-            "xml": "<cf:xfunction xname=\"echoit\">\n<cf:xfor start=\"0\" step=\"3\" stop=\"52\" var=\"x\">\n<cf:xecho var=\"x\"/>\n</cf:xfor>\n</cf:xfunction>",
             "children": [
                 {
                     "ElementName": "xfor",
                     "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.doctype",
-                    "xml": "<cf:xfor start=\"0\" step=\"3\" stop=\"52\" var=\"x\">\n<cf:xecho var=\"x\"/>\n</cf:xfor>",
                     "children": [
                         {
                             "ElementName": "xecho",
                             "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.doctype",
-                            "xml": "<cf:xecho var=\"x\"/>",
                             "children": [],
                             "attrs": {
                                 "var": "x"
-                            }
+                            },
+                            "striped": [],
+                            "strings": [],
+                            "xml": "<cf:xecho var=\"x\"/>"
                         }
                     ],
                     "attrs": {
@@ -173,12 +265,26 @@
                         "start": "0",
                         "stop": "52",
                         "step": "3"
-                    }
+                    },
+                    "striped": [],
+                    "strings": [
+                        "\n",
+                        "\n"
+                    ],
+                    "xml": "<cf:xfor start=\"0\" step=\"3\" stop=\"52\" var=\"x\">\n<cf:xecho var=\"x\"/>\n</cf:xfor>"
                 }
             ],
             "attrs": {
                 "xname": "echoit"
             },
+            "striped": [],
+            "strings": [
+                "\n",
+                "\n",
+                "\n",
+                "\n"
+            ],
+            "xml": "<cf:xfunction xname=\"echoit\">\n<cf:xfor start=\"0\" step=\"3\" stop=\"52\" var=\"x\">\n<cf:xecho var=\"x\"/>\n</cf:xfor>\n</cf:xfunction>",
             "vardict": {
                 "x": 51
             }
