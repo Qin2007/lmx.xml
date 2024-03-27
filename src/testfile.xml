@@ -1,61 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <cf:xfunction xname="main" xmlns:cf="https://ant.ractoc.com/xmlns/lmx/0/0/0/index.doctype">
-    <attrs>attributes</attrs>
-    <name>name?</name>
-    <cf:xout>hello</cf:xout>
-    <cf:xout>hello</cf:xout>
-    <div>
-        <text>
-            <p>HTTP_ACCEPT
-                HTTP_COOKIE
-                HTTP_FORWARDED
-                HTTP_HOST
-                HTTP_PROXY_CONNECTION
-                HTTP_REFERER
-                HTTP_USER_AGENT
-                AUTH_TYPE
-                CONN_REMOTE_ADDR
-                CONTEXT_PREFIX
-                CONTEXT_DOCUMENT_ROOT
-                IPV6
-                PATH_INFO
-                QUERY_STRING
-                REMOTE_ADDR
-                REMOTE_HOST
-                REMOTE_IDENT
-                REMOTE_PORT
-                REMOTE_USER
-                REQUEST_METHOD
-                SCRIPT_FILENAME
-
-                DOCUMENT_ROOT
-                SCRIPT_GROUP
-                SCRIPT_USER
-                SERVER_ADDR
-                SERVER_ADMIN
-                SERVER_NAME
-                SERVER_PORT
-                SERVER_PROTOCOL
-                SERVER_SOFTWARE
-                TIME_YEAR
-                TIME_MON
-                TIME_DAY
-                TIME_HOUR
-                TIME_MIN
-                TIME_SEC
-                TIME_WDAY
-                TIME
-                API_VERSION
-                CONN_REMOTE_ADDR
-                HTTPS
-                IS_SUBREQ
-                REMOTE_ADDR
-                REQUEST_FILENAME
-                REQUEST_SCHEME
-                REQUEST_URI
-                THE_REQUEST
-            </p>
-        </text>
-    </div>
-    <cf:xout>hello</cf:xout>
+    <cf:xout>hello world</cf:xout>
+    <cf:xfunction xname="echoit">
+        <cf:xfor var="x" start="0" stop="52" step="3">
+            <cf:xecho var="x"/>
+        </cf:xfor>
+    </cf:xfunction>
+    <cf:xcall xname="echoit"/>
+    <cf:xout>hello world</cf:xout>
 </cf:xfunction>

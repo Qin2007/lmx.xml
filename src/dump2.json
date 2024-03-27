@@ -1,0 +1,41 @@
+{
+    "xml": {
+        "ElementName": "Hello",
+        "xmlns": null,
+        "xml": "<Hello>hello<span>echo</span><span>1<span>world</span>2</span>WND!</Hello>",
+        "children": [
+            "hello",
+            {
+                "ElementName": "span",
+                "xmlns": null,
+                "xml": "<span>echo</span>",
+                "children": [
+                    "echo"
+                ],
+                "attrs": {}
+            },
+            {
+                "ElementName": "span",
+                "xmlns": null,
+                "xml": "<span>1<span>world</span>2</span>",
+                "children": [
+                    "1",
+                    {
+                        "ElementName": "span",
+                        "xmlns": null,
+                        "xml": "<span>world</span>",
+                        "children": [
+                            "world"
+                        ],
+                        "attrs": {}
+                    },
+                    "2"
+                ],
+                "attrs": {}
+            },
+            "WND!"
+        ],
+        "attrs": {}
+    },
+    "xfuncs": {}
+}
