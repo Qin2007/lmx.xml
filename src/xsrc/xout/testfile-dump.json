@@ -1,0 +1,170 @@
+{
+    "xml": {
+        "ElementName": "xfunction",
+        "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+        "children": [
+            {
+                "ElementName": "include",
+                "xmlns": null,
+                "children": [],
+                "attrs": {
+                    "src": "stdString.xml",
+                    "as": "String"
+                },
+                "striped": [],
+                "strings": [],
+                "xml": "<include as=\"String\" src=\"stdString.xml\"/>"
+            },
+            {
+                "ElementName": "include",
+                "xmlns": null,
+                "children": [],
+                "attrs": {
+                    "src": "stdArray.xml",
+                    "as": "array"
+                },
+                "striped": [],
+                "strings": [],
+                "xml": "<include as=\"array\" src=\"stdArray.xml\"/>"
+            },
+            {
+                "ElementName": "new",
+                "xmlns": null,
+                "children": [
+                    {
+                        "ElementName": "li",
+                        "xmlns": null,
+                        "children": [
+                            {
+                                "ElementName": "new",
+                                "xmlns": null,
+                                "children": [],
+                                "attrs": {},
+                                "striped": [],
+                                "strings": [],
+                                "xml": "<new/>"
+                            }
+                        ],
+                        "attrs": {},
+                        "striped": [],
+                        "strings": [
+                            "\n"
+                        ],
+                        "xml": "<li><new/>\n</li>"
+                    }
+                ],
+                "attrs": {
+                    "type": "Array"
+                },
+                "striped": [],
+                "strings": [
+                    "\n",
+                    "\n",
+                    "\n"
+                ],
+                "xml": "<new type=\"Array\">\n<li><new/>\n</li>\n</new>"
+            }
+        ],
+        "attrs": {
+            "xname": "main",
+            "xmlns:car": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php"
+        },
+        "striped": [],
+        "strings": [
+            "\n",
+            "\n",
+            "\n",
+            "\n",
+            "\n",
+            "\n",
+            "\n"
+        ],
+        "xml": "<car:xfunction xmlns:car=\"https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php\" xname=\"main\">\n<include as=\"String\" src=\"stdString.xml\"/>\n<include as=\"array\" src=\"stdArray.xml\"/>\n<new type=\"Array\">\n<li><new/>\n</li>\n</new>\n</car:xfunction>",
+        "vardict": {}
+    },
+    "xfuncs": {
+        "main": {
+            "ElementName": "xfunction",
+            "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+            "children": [
+                {
+                    "ElementName": "include",
+                    "xmlns": null,
+                    "children": [],
+                    "attrs": {
+                        "src": "stdString.xml",
+                        "as": "String"
+                    },
+                    "striped": [],
+                    "strings": [],
+                    "xml": "<include as=\"String\" src=\"stdString.xml\"/>"
+                },
+                {
+                    "ElementName": "include",
+                    "xmlns": null,
+                    "children": [],
+                    "attrs": {
+                        "src": "stdArray.xml",
+                        "as": "array"
+                    },
+                    "striped": [],
+                    "strings": [],
+                    "xml": "<include as=\"array\" src=\"stdArray.xml\"/>"
+                },
+                {
+                    "ElementName": "new",
+                    "xmlns": null,
+                    "children": [
+                        {
+                            "ElementName": "li",
+                            "xmlns": null,
+                            "children": [
+                                {
+                                    "ElementName": "new",
+                                    "xmlns": null,
+                                    "children": [],
+                                    "attrs": {},
+                                    "striped": [],
+                                    "strings": [],
+                                    "xml": "<new/>"
+                                }
+                            ],
+                            "attrs": {},
+                            "striped": [],
+                            "strings": [
+                                "\n"
+                            ],
+                            "xml": "<li><new/>\n</li>"
+                        }
+                    ],
+                    "attrs": {
+                        "type": "Array"
+                    },
+                    "striped": [],
+                    "strings": [
+                        "\n",
+                        "\n",
+                        "\n"
+                    ],
+                    "xml": "<new type=\"Array\">\n<li><new/>\n</li>\n</new>"
+                }
+            ],
+            "attrs": {
+                "xname": "main",
+                "xmlns:car": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php"
+            },
+            "striped": [],
+            "strings": [
+                "\n",
+                "\n",
+                "\n",
+                "\n",
+                "\n",
+                "\n",
+                "\n"
+            ],
+            "xml": "<car:xfunction xmlns:car=\"https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php\" xname=\"main\">\n<include as=\"String\" src=\"stdString.xml\"/>\n<include as=\"array\" src=\"stdArray.xml\"/>\n<new type=\"Array\">\n<li><new/>\n</li>\n</new>\n</car:xfunction>",
+            "vardict": {}
+        }
+    }
+}

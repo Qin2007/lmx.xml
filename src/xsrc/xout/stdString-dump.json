@@ -1,0 +1,34 @@
+{
+    "xml": {
+        "ElementName": "xfunction",
+        "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+        "children": [],
+        "attrs": {
+            "xname": "main",
+            "xmlns:car": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php"
+        },
+        "striped": [],
+        "strings": [
+            "\n"
+        ],
+        "xml": "<car:xfunction xmlns:car=\"https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php\" xname=\"main\">\n</car:xfunction>",
+        "vardict": {}
+    },
+    "xfuncs": {
+        "main": {
+            "ElementName": "xfunction",
+            "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+            "children": [],
+            "attrs": {
+                "xname": "main",
+                "xmlns:car": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php"
+            },
+            "striped": [],
+            "strings": [
+                "\n"
+            ],
+            "xml": "<car:xfunction xmlns:car=\"https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php\" xname=\"main\">\n</car:xfunction>",
+            "vardict": {}
+        }
+    }
+}
