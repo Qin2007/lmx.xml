@@ -12,7 +12,14 @@
             "\n"
         ],
         "xml": "<car:xfunction xmlns:car=\"https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php\" xname=\"main\">\n</car:xfunction>",
-        "vardict": {}
+        "vardict": {
+            "__name": {
+                "value": [
+                    "stdArray.xml"
+                ],
+                "type": "String"
+            }
+        }
     },
     "xfuncs": {
         "main": {
@@ -28,7 +35,14 @@
                 "\n"
             ],
             "xml": "<car:xfunction xmlns:car=\"https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php\" xname=\"main\">\n</car:xfunction>",
-            "vardict": {}
+            "vardict": {
+                "__name": {
+                    "value": [
+                        "stdArray.xml"
+                    ],
+                    "type": "String"
+                }
+            }
         }
     }
 }

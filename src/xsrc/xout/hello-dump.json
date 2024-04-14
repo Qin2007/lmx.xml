@@ -1,0 +1,606 @@
+{
+    "xml": {
+        "ElementName": "xfunction",
+        "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+        "children": [
+            {
+                "ElementName": "new",
+                "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                "children": [
+                    {
+                        "ElementName": "new",
+                        "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                        "children": [
+                            "2156"
+                        ],
+                        "attrs": {
+                            "type": "String",
+                            "setas": "xmlns8923"
+                        },
+                        "striped": [
+                            "2156"
+                        ],
+                        "strings": [
+                            "2156"
+                        ],
+                        "xml": "<car:new type=\"String\">2156</car:new>"
+                    },
+                    {
+                        "ElementName": "new",
+                        "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                        "children": [
+                            "201"
+                        ],
+                        "attrs": {
+                            "type": "String",
+                            "setas": "xmlns8923"
+                        },
+                        "striped": [
+                            "201"
+                        ],
+                        "strings": [
+                            "201"
+                        ],
+                        "xml": "<car:new type=\"String\">201</car:new>"
+                    },
+                    {
+                        "ElementName": "new",
+                        "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                        "children": [
+                            "376"
+                        ],
+                        "attrs": {
+                            "type": "String",
+                            "setas": "xmlns8923"
+                        },
+                        "striped": [
+                            "376"
+                        ],
+                        "strings": [
+                            "376"
+                        ],
+                        "xml": "<car:new type=\"String\">376</car:new>"
+                    },
+                    {
+                        "ElementName": "new",
+                        "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                        "children": [
+                            "87"
+                        ],
+                        "attrs": {
+                            "type": "String",
+                            "setas": "xmlns8923"
+                        },
+                        "striped": [
+                            "87"
+                        ],
+                        "strings": [
+                            "87"
+                        ],
+                        "xml": "<car:new type=\"String\">87</car:new>"
+                    },
+                    {
+                        "ElementName": "new",
+                        "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                        "children": [
+                            "21"
+                        ],
+                        "attrs": {
+                            "type": "String",
+                            "setas": "xmlns8923"
+                        },
+                        "striped": [
+                            "21"
+                        ],
+                        "strings": [
+                            "21"
+                        ],
+                        "xml": "<car:new type=\"String\">21</car:new>"
+                    },
+                    {
+                        "ElementName": "new",
+                        "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                        "children": [
+                            "675"
+                        ],
+                        "attrs": {
+                            "type": "String",
+                            "setas": "xmlns8923"
+                        },
+                        "striped": [
+                            "675"
+                        ],
+                        "strings": [
+                            "675"
+                        ],
+                        "xml": "<car:new type=\"String\">675</car:new>"
+                    }
+                ],
+                "attrs": {
+                    "type": "Array",
+                    "setas": "metaml"
+                },
+                "striped": [
+                    "2156",
+                    "201",
+                    "376",
+                    "87",
+                    "21",
+                    "675"
+                ],
+                "strings": [
+                    "\n",
+                    "2156",
+                    "\n",
+                    "201",
+                    "\n",
+                    "376",
+                    "\n",
+                    "87",
+                    "\n",
+                    "21",
+                    "\n",
+                    "675",
+                    "\n"
+                ],
+                "xml": "<car:new setas=\"metaml\" type=\"Array\">\n<car:new type=\"String\">2156</car:new>\n<car:new type=\"String\">201</car:new>\n<car:new type=\"String\">376</car:new>\n<car:new type=\"String\">87</car:new>\n<car:new type=\"String\">21</car:new>\n<car:new type=\"String\">675</car:new>\n</car:new>"
+            },
+            {
+                "ElementName": "xfor",
+                "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                "children": [
+                    {
+                        "ElementName": "xecho",
+                        "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                        "children": [],
+                        "attrs": {
+                            "var": "my variable"
+                        },
+                        "striped": [],
+                        "strings": [],
+                        "xml": "<car:xecho var=\"my variable\"/>"
+                    }
+                ],
+                "attrs": {
+                    "loopto": "metaml",
+                    "var": "my variable"
+                },
+                "striped": [],
+                "strings": [
+                    "\n",
+                    "\n"
+                ],
+                "xml": "<car:xfor loopto=\"metaml\" var=\"my variable\">\n<car:xecho var=\"my variable\"/>\n</car:xfor>"
+            },
+            {
+                "ElementName": "xfor",
+                "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                "children": [
+                    {
+                        "ElementName": "xecho",
+                        "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                        "children": [],
+                        "attrs": {
+                            "var": "my other variable"
+                        },
+                        "striped": [],
+                        "strings": [],
+                        "xml": "<car:xecho var=\"my other variable\"/>"
+                    }
+                ],
+                "attrs": {
+                    "var": "my other variable",
+                    "start": "0",
+                    "step": "8",
+                    "stop": "88"
+                },
+                "striped": [],
+                "strings": [
+                    "\n",
+                    "\n"
+                ],
+                "xml": "<car:xfor start=\"0\" step=\"8\" stop=\"88\" var=\"my other variable\">\n<car:xecho var=\"my other variable\"/>\n</car:xfor>"
+            }
+        ],
+        "attrs": {
+            "xname": "main",
+            "xmlns:car": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php"
+        },
+        "striped": [
+            "2156",
+            "201",
+            "376",
+            "87",
+            "21",
+            "675"
+        ],
+        "strings": [
+            "\n",
+            "\n",
+            "2156",
+            "\n",
+            "201",
+            "\n",
+            "376",
+            "\n",
+            "87",
+            "\n",
+            "21",
+            "\n",
+            "675",
+            "\n",
+            "\n",
+            "\n",
+            "\n",
+            "\n",
+            "\n",
+            "\n",
+            "\n"
+        ],
+        "xml": "<car:xfunction xmlns:car=\"https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php\" xname=\"main\">\n<car:new setas=\"metaml\" type=\"Array\">\n<car:new type=\"String\">2156</car:new>\n<car:new type=\"String\">201</car:new>\n<car:new type=\"String\">376</car:new>\n<car:new type=\"String\">87</car:new>\n<car:new type=\"String\">21</car:new>\n<car:new type=\"String\">675</car:new>\n</car:new>\n<car:xfor loopto=\"metaml\" var=\"my variable\">\n<car:xecho var=\"my variable\"/>\n</car:xfor>\n<car:xfor start=\"0\" step=\"8\" stop=\"88\" var=\"my other variable\">\n<car:xecho var=\"my other variable\"/>\n</car:xfor>\n</car:xfunction>",
+        "vardict": {
+            "__name": {
+                "value": [
+                    "__undef__"
+                ],
+                "type": "String"
+            },
+            "metaml": {
+                "value": [
+                    {
+                        "value": [
+                            "2156"
+                        ],
+                        "type": "String"
+                    },
+                    {
+                        "value": [
+                            "201"
+                        ],
+                        "type": "String"
+                    },
+                    {
+                        "value": [
+                            "376"
+                        ],
+                        "type": "String"
+                    },
+                    {
+                        "value": [
+                            "87"
+                        ],
+                        "type": "String"
+                    },
+                    {
+                        "value": [
+                            "21"
+                        ],
+                        "type": "String"
+                    },
+                    {
+                        "value": [
+                            "675"
+                        ],
+                        "type": "String"
+                    }
+                ],
+                "type": "Array"
+            },
+            "my variable": {
+                "value": [
+                    "675"
+                ],
+                "type": "String"
+            },
+            "my other variable": {
+                "value": [
+                    "80"
+                ],
+                "type": "String"
+            }
+        }
+    },
+    "xfuncs": {
+        "main": {
+            "ElementName": "xfunction",
+            "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+            "children": [
+                {
+                    "ElementName": "new",
+                    "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                    "children": [
+                        {
+                            "ElementName": "new",
+                            "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                            "children": [
+                                "2156"
+                            ],
+                            "attrs": {
+                                "type": "String",
+                                "setas": "xmlns8923"
+                            },
+                            "striped": [
+                                "2156"
+                            ],
+                            "strings": [
+                                "2156"
+                            ],
+                            "xml": "<car:new type=\"String\">2156</car:new>"
+                        },
+                        {
+                            "ElementName": "new",
+                            "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                            "children": [
+                                "201"
+                            ],
+                            "attrs": {
+                                "type": "String",
+                                "setas": "xmlns8923"
+                            },
+                            "striped": [
+                                "201"
+                            ],
+                            "strings": [
+                                "201"
+                            ],
+                            "xml": "<car:new type=\"String\">201</car:new>"
+                        },
+                        {
+                            "ElementName": "new",
+                            "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                            "children": [
+                                "376"
+                            ],
+                            "attrs": {
+                                "type": "String",
+                                "setas": "xmlns8923"
+                            },
+                            "striped": [
+                                "376"
+                            ],
+                            "strings": [
+                                "376"
+                            ],
+                            "xml": "<car:new type=\"String\">376</car:new>"
+                        },
+                        {
+                            "ElementName": "new",
+                            "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                            "children": [
+                                "87"
+                            ],
+                            "attrs": {
+                                "type": "String",
+                                "setas": "xmlns8923"
+                            },
+                            "striped": [
+                                "87"
+                            ],
+                            "strings": [
+                                "87"
+                            ],
+                            "xml": "<car:new type=\"String\">87</car:new>"
+                        },
+                        {
+                            "ElementName": "new",
+                            "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                            "children": [
+                                "21"
+                            ],
+                            "attrs": {
+                                "type": "String",
+                                "setas": "xmlns8923"
+                            },
+                            "striped": [
+                                "21"
+                            ],
+                            "strings": [
+                                "21"
+                            ],
+                            "xml": "<car:new type=\"String\">21</car:new>"
+                        },
+                        {
+                            "ElementName": "new",
+                            "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                            "children": [
+                                "675"
+                            ],
+                            "attrs": {
+                                "type": "String",
+                                "setas": "xmlns8923"
+                            },
+                            "striped": [
+                                "675"
+                            ],
+                            "strings": [
+                                "675"
+                            ],
+                            "xml": "<car:new type=\"String\">675</car:new>"
+                        }
+                    ],
+                    "attrs": {
+                        "type": "Array",
+                        "setas": "metaml"
+                    },
+                    "striped": [
+                        "2156",
+                        "201",
+                        "376",
+                        "87",
+                        "21",
+                        "675"
+                    ],
+                    "strings": [
+                        "\n",
+                        "2156",
+                        "\n",
+                        "201",
+                        "\n",
+                        "376",
+                        "\n",
+                        "87",
+                        "\n",
+                        "21",
+                        "\n",
+                        "675",
+                        "\n"
+                    ],
+                    "xml": "<car:new setas=\"metaml\" type=\"Array\">\n<car:new type=\"String\">2156</car:new>\n<car:new type=\"String\">201</car:new>\n<car:new type=\"String\">376</car:new>\n<car:new type=\"String\">87</car:new>\n<car:new type=\"String\">21</car:new>\n<car:new type=\"String\">675</car:new>\n</car:new>"
+                },
+                {
+                    "ElementName": "xfor",
+                    "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                    "children": [
+                        {
+                            "ElementName": "xecho",
+                            "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                            "children": [],
+                            "attrs": {
+                                "var": "my variable"
+                            },
+                            "striped": [],
+                            "strings": [],
+                            "xml": "<car:xecho var=\"my variable\"/>"
+                        }
+                    ],
+                    "attrs": {
+                        "loopto": "metaml",
+                        "var": "my variable"
+                    },
+                    "striped": [],
+                    "strings": [
+                        "\n",
+                        "\n"
+                    ],
+                    "xml": "<car:xfor loopto=\"metaml\" var=\"my variable\">\n<car:xecho var=\"my variable\"/>\n</car:xfor>"
+                },
+                {
+                    "ElementName": "xfor",
+                    "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                    "children": [
+                        {
+                            "ElementName": "xecho",
+                            "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                            "children": [],
+                            "attrs": {
+                                "var": "my other variable"
+                            },
+                            "striped": [],
+                            "strings": [],
+                            "xml": "<car:xecho var=\"my other variable\"/>"
+                        }
+                    ],
+                    "attrs": {
+                        "var": "my other variable",
+                        "start": "0",
+                        "step": "8",
+                        "stop": "88"
+                    },
+                    "striped": [],
+                    "strings": [
+                        "\n",
+                        "\n"
+                    ],
+                    "xml": "<car:xfor start=\"0\" step=\"8\" stop=\"88\" var=\"my other variable\">\n<car:xecho var=\"my other variable\"/>\n</car:xfor>"
+                }
+            ],
+            "attrs": {
+                "xname": "main",
+                "xmlns:car": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php"
+            },
+            "striped": [
+                "2156",
+                "201",
+                "376",
+                "87",
+                "21",
+                "675"
+            ],
+            "strings": [
+                "\n",
+                "\n",
+                "2156",
+                "\n",
+                "201",
+                "\n",
+                "376",
+                "\n",
+                "87",
+                "\n",
+                "21",
+                "\n",
+                "675",
+                "\n",
+                "\n",
+                "\n",
+                "\n",
+                "\n",
+                "\n",
+                "\n",
+                "\n"
+            ],
+            "xml": "<car:xfunction xmlns:car=\"https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php\" xname=\"main\">\n<car:new setas=\"metaml\" type=\"Array\">\n<car:new type=\"String\">2156</car:new>\n<car:new type=\"String\">201</car:new>\n<car:new type=\"String\">376</car:new>\n<car:new type=\"String\">87</car:new>\n<car:new type=\"String\">21</car:new>\n<car:new type=\"String\">675</car:new>\n</car:new>\n<car:xfor loopto=\"metaml\" var=\"my variable\">\n<car:xecho var=\"my variable\"/>\n</car:xfor>\n<car:xfor start=\"0\" step=\"8\" stop=\"88\" var=\"my other variable\">\n<car:xecho var=\"my other variable\"/>\n</car:xfor>\n</car:xfunction>",
+            "vardict": {
+                "__name": {
+                    "value": [
+                        "__undef__"
+                    ],
+                    "type": "String"
+                },
+                "metaml": {
+                    "value": [
+                        {
+                            "value": [
+                                "2156"
+                            ],
+                            "type": "String"
+                        },
+                        {
+                            "value": [
+                                "201"
+                            ],
+                            "type": "String"
+                        },
+                        {
+                            "value": [
+                                "376"
+                            ],
+                            "type": "String"
+                        },
+                        {
+                            "value": [
+                                "87"
+                            ],
+                            "type": "String"
+                        },
+                        {
+                            "value": [
+                                "21"
+                            ],
+                            "type": "String"
+                        },
+                        {
+                            "value": [
+                                "675"
+                            ],
+                            "type": "String"
+                        }
+                    ],
+                    "type": "Array"
+                },
+                "my variable": {
+                    "value": [
+                        "675"
+                    ],
+                    "type": "String"
+                },
+                "my other variable": {
+                    "value": [
+                        "80"
+                    ],
+                    "type": "String"
+                }
+            }
+        }
+    }
+}

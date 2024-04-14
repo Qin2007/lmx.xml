@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<car:xfunction xmlns:car="https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php" xname="main">
+    <car:new type="Array" setas="metaml">
+        <car:new type="String">2156</car:new>
+        <car:new type="String">201</car:new>
+        <car:new type="String">376</car:new>
+        <car:new type="String">87</car:new>
+        <car:new type="String">21</car:new>
+        <car:new type="String">675</car:new>
+    </car:new>
+    <car:xfor loopto="metaml" var="my variable">
+        <car:xecho var="my variable"/>
+    </car:xfor>
+    <car:xfor var="my other variable" start="0" step="8" stop="88">
+        <car:xecho var="my other variable"/>
+    </car:xfor>
+</car:xfunction>

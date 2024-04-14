@@ -2,13 +2,16 @@ pass
 
 
 class Printer:
-    def __init__(self, openf):
+    def __init__(self, openf, printconsole=False):
+        self.printconsole = printconsole
         self.openf = openf
         self.total = 0
 
     def out(self, strx: str):
         self.openf.write(strx)
         self.total += len(strx.encode())
+        if self.printconsole:
+            print(strx, sep='', end='')
         return self
 
     def return_(self):

@@ -2,33 +2,2375 @@
     "xml": {
         "ElementName": "xfunction",
         "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
-        "children": [],
+        "children": [
+            {
+                "ElementName": "new",
+                "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                "children": [
+                    "__main__"
+                ],
+                "attrs": {
+                    "type": "String",
+                    "setas": "__name__"
+                },
+                "striped": [
+                    "__main__"
+                ],
+                "strings": [
+                    "__main__"
+                ],
+                "xml": "<new setas=\"__name__\" type=\"String\">__main__</new>"
+            },
+            {
+                "ElementName": "autofill",
+                "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                "children": [],
+                "attrs": {},
+                "striped": [],
+                "strings": [],
+                "xml": "<autofill/>"
+            },
+            {
+                "ElementName": "if",
+                "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                "children": [
+                    {
+                        "ElementName": "ifcond",
+                        "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                        "children": [],
+                        "attrs": {
+                            "left": "__name",
+                            "equals": "==",
+                            "right": "__name__"
+                        },
+                        "striped": [],
+                        "strings": [],
+                        "xml": "<ifcond equals=\"==\" left=\"__name\" right=\"__name__\"/>"
+                    },
+                    {
+                        "ElementName": "ifcond",
+                        "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                        "children": [],
+                        "attrs": {
+                            "left": "666",
+                            "equals": "==",
+                            "rightStr": "6"
+                        },
+                        "striped": [],
+                        "strings": [],
+                        "xml": "<ifcond equals=\"==\" left=\"666\" rightStr=\"6\"/>"
+                    },
+                    {
+                        "ElementName": "ifbody",
+                        "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                        "children": [
+                            {
+                                "ElementName": "xout",
+                                "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                                "children": [
+                                    "you made it"
+                                ],
+                                "attrs": {},
+                                "striped": [
+                                    "you made it"
+                                ],
+                                "strings": [
+                                    "you made it"
+                                ],
+                                "xml": "<xout>you made it</xout>"
+                            }
+                        ],
+                        "attrs": {},
+                        "striped": [
+                            "you made it"
+                        ],
+                        "strings": [
+                            "\n",
+                            "you made it",
+                            "\n"
+                        ],
+                        "xml": "<ifbody>\n<xout>you made it</xout>\n</ifbody>"
+                    }
+                ],
+                "attrs": {},
+                "striped": [
+                    "you made it"
+                ],
+                "strings": [
+                    "\n",
+                    "\n",
+                    "\n",
+                    "you made it",
+                    "\n"
+                ],
+                "xml": "<if><ifcond equals=\"==\" left=\"__name\" right=\"__name__\"/>\n<ifcond equals=\"==\" left=\"666\" rightStr=\"6\"/>\n<ifbody>\n<xout>you made it</xout>\n</ifbody></if>"
+            }
+        ],
         "attrs": {
             "xname": "main",
-            "xmlns:car": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php"
+            "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php"
         },
-        "striped": [],
+        "striped": [
+            "__main__",
+            "you made it"
+        ],
         "strings": [
+            "\n",
+            "__main__",
+            "\n",
+            "\n",
+            "\n",
+            "\n",
+            "\n",
+            "you made it",
             "\n"
         ],
-        "xml": "<car:xfunction xmlns:car=\"https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php\" xname=\"main\">\n</car:xfunction>",
-        "vardict": {}
+        "xml": "<xfunction xmlns=\"https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php\" xname=\"main\">\n<new setas=\"__name__\" type=\"String\">__main__</new>\n<autofill/>\n<if><ifcond equals=\"==\" left=\"__name\" right=\"__name__\"/>\n<ifcond equals=\"==\" left=\"666\" rightStr=\"6\"/>\n<ifbody>\n<xout>you made it</xout>\n</ifbody></if></xfunction>",
+        "vardict": {
+            "__name": {
+                "value": [
+                    "stdString.xml"
+                ],
+                "type": "String"
+            },
+            "__name__": {
+                "value": [
+                    "__main__"
+                ],
+                "type": "String"
+            },
+            "-5": {
+                "value": "-5",
+                "type": "String"
+            },
+            "-4": {
+                "value": "-4",
+                "type": "String"
+            },
+            "-3": {
+                "value": "-3",
+                "type": "String"
+            },
+            "-2": {
+                "value": "-2",
+                "type": "String"
+            },
+            "-1": {
+                "value": "-1",
+                "type": "String"
+            },
+            "0": {
+                "value": "0",
+                "type": "String"
+            },
+            "1": {
+                "value": "1",
+                "type": "String"
+            },
+            "2": {
+                "value": "2",
+                "type": "String"
+            },
+            "3": {
+                "value": "3",
+                "type": "String"
+            },
+            "4": {
+                "value": "4",
+                "type": "String"
+            },
+            "5": {
+                "value": "5",
+                "type": "String"
+            },
+            "6": {
+                "value": "6",
+                "type": "String"
+            },
+            "7": {
+                "value": "7",
+                "type": "String"
+            },
+            "8": {
+                "value": "8",
+                "type": "String"
+            },
+            "9": {
+                "value": "9",
+                "type": "String"
+            },
+            "10": {
+                "value": "10",
+                "type": "String"
+            },
+            "11": {
+                "value": "11",
+                "type": "String"
+            },
+            "12": {
+                "value": "12",
+                "type": "String"
+            },
+            "13": {
+                "value": "13",
+                "type": "String"
+            },
+            "14": {
+                "value": "14",
+                "type": "String"
+            },
+            "15": {
+                "value": "15",
+                "type": "String"
+            },
+            "16": {
+                "value": "16",
+                "type": "String"
+            },
+            "17": {
+                "value": "17",
+                "type": "String"
+            },
+            "18": {
+                "value": "18",
+                "type": "String"
+            },
+            "19": {
+                "value": "19",
+                "type": "String"
+            },
+            "20": {
+                "value": "20",
+                "type": "String"
+            },
+            "21": {
+                "value": "21",
+                "type": "String"
+            },
+            "22": {
+                "value": "22",
+                "type": "String"
+            },
+            "23": {
+                "value": "23",
+                "type": "String"
+            },
+            "24": {
+                "value": "24",
+                "type": "String"
+            },
+            "25": {
+                "value": "25",
+                "type": "String"
+            },
+            "26": {
+                "value": "26",
+                "type": "String"
+            },
+            "27": {
+                "value": "27",
+                "type": "String"
+            },
+            "28": {
+                "value": "28",
+                "type": "String"
+            },
+            "29": {
+                "value": "29",
+                "type": "String"
+            },
+            "30": {
+                "value": "30",
+                "type": "String"
+            },
+            "31": {
+                "value": "31",
+                "type": "String"
+            },
+            "32": {
+                "value": "32",
+                "type": "String"
+            },
+            "33": {
+                "value": "33",
+                "type": "String"
+            },
+            "34": {
+                "value": "34",
+                "type": "String"
+            },
+            "35": {
+                "value": "35",
+                "type": "String"
+            },
+            "36": {
+                "value": "36",
+                "type": "String"
+            },
+            "37": {
+                "value": "37",
+                "type": "String"
+            },
+            "38": {
+                "value": "38",
+                "type": "String"
+            },
+            "39": {
+                "value": "39",
+                "type": "String"
+            },
+            "40": {
+                "value": "40",
+                "type": "String"
+            },
+            "41": {
+                "value": "41",
+                "type": "String"
+            },
+            "42": {
+                "value": "42",
+                "type": "String"
+            },
+            "43": {
+                "value": "43",
+                "type": "String"
+            },
+            "44": {
+                "value": "44",
+                "type": "String"
+            },
+            "45": {
+                "value": "45",
+                "type": "String"
+            },
+            "46": {
+                "value": "46",
+                "type": "String"
+            },
+            "47": {
+                "value": "47",
+                "type": "String"
+            },
+            "48": {
+                "value": "48",
+                "type": "String"
+            },
+            "49": {
+                "value": "49",
+                "type": "String"
+            },
+            "50": {
+                "value": "50",
+                "type": "String"
+            },
+            "51": {
+                "value": "51",
+                "type": "String"
+            },
+            "52": {
+                "value": "52",
+                "type": "String"
+            },
+            "53": {
+                "value": "53",
+                "type": "String"
+            },
+            "54": {
+                "value": "54",
+                "type": "String"
+            },
+            "55": {
+                "value": "55",
+                "type": "String"
+            },
+            "56": {
+                "value": "56",
+                "type": "String"
+            },
+            "57": {
+                "value": "57",
+                "type": "String"
+            },
+            "58": {
+                "value": "58",
+                "type": "String"
+            },
+            "59": {
+                "value": "59",
+                "type": "String"
+            },
+            "60": {
+                "value": "60",
+                "type": "String"
+            },
+            "61": {
+                "value": "61",
+                "type": "String"
+            },
+            "62": {
+                "value": "62",
+                "type": "String"
+            },
+            "63": {
+                "value": "63",
+                "type": "String"
+            },
+            "64": {
+                "value": "64",
+                "type": "String"
+            },
+            "65": {
+                "value": "65",
+                "type": "String"
+            },
+            "66": {
+                "value": "66",
+                "type": "String"
+            },
+            "67": {
+                "value": "67",
+                "type": "String"
+            },
+            "68": {
+                "value": "68",
+                "type": "String"
+            },
+            "69": {
+                "value": "69",
+                "type": "String"
+            },
+            "70": {
+                "value": "70",
+                "type": "String"
+            },
+            "71": {
+                "value": "71",
+                "type": "String"
+            },
+            "72": {
+                "value": "72",
+                "type": "String"
+            },
+            "73": {
+                "value": "73",
+                "type": "String"
+            },
+            "74": {
+                "value": "74",
+                "type": "String"
+            },
+            "75": {
+                "value": "75",
+                "type": "String"
+            },
+            "76": {
+                "value": "76",
+                "type": "String"
+            },
+            "77": {
+                "value": "77",
+                "type": "String"
+            },
+            "78": {
+                "value": "78",
+                "type": "String"
+            },
+            "79": {
+                "value": "79",
+                "type": "String"
+            },
+            "80": {
+                "value": "80",
+                "type": "String"
+            },
+            "81": {
+                "value": "81",
+                "type": "String"
+            },
+            "82": {
+                "value": "82",
+                "type": "String"
+            },
+            "83": {
+                "value": "83",
+                "type": "String"
+            },
+            "84": {
+                "value": "84",
+                "type": "String"
+            },
+            "85": {
+                "value": "85",
+                "type": "String"
+            },
+            "86": {
+                "value": "86",
+                "type": "String"
+            },
+            "87": {
+                "value": "87",
+                "type": "String"
+            },
+            "88": {
+                "value": "88",
+                "type": "String"
+            },
+            "89": {
+                "value": "89",
+                "type": "String"
+            },
+            "90": {
+                "value": "90",
+                "type": "String"
+            },
+            "91": {
+                "value": "91",
+                "type": "String"
+            },
+            "92": {
+                "value": "92",
+                "type": "String"
+            },
+            "93": {
+                "value": "93",
+                "type": "String"
+            },
+            "94": {
+                "value": "94",
+                "type": "String"
+            },
+            "95": {
+                "value": "95",
+                "type": "String"
+            },
+            "96": {
+                "value": "96",
+                "type": "String"
+            },
+            "97": {
+                "value": "97",
+                "type": "String"
+            },
+            "98": {
+                "value": "98",
+                "type": "String"
+            },
+            "99": {
+                "value": "99",
+                "type": "String"
+            },
+            "100": {
+                "value": "100",
+                "type": "String"
+            },
+            "101": {
+                "value": "101",
+                "type": "String"
+            },
+            "102": {
+                "value": "102",
+                "type": "String"
+            },
+            "103": {
+                "value": "103",
+                "type": "String"
+            },
+            "104": {
+                "value": "104",
+                "type": "String"
+            },
+            "105": {
+                "value": "105",
+                "type": "String"
+            },
+            "106": {
+                "value": "106",
+                "type": "String"
+            },
+            "107": {
+                "value": "107",
+                "type": "String"
+            },
+            "108": {
+                "value": "108",
+                "type": "String"
+            },
+            "109": {
+                "value": "109",
+                "type": "String"
+            },
+            "110": {
+                "value": "110",
+                "type": "String"
+            },
+            "111": {
+                "value": "111",
+                "type": "String"
+            },
+            "112": {
+                "value": "112",
+                "type": "String"
+            },
+            "113": {
+                "value": "113",
+                "type": "String"
+            },
+            "114": {
+                "value": "114",
+                "type": "String"
+            },
+            "115": {
+                "value": "115",
+                "type": "String"
+            },
+            "116": {
+                "value": "116",
+                "type": "String"
+            },
+            "117": {
+                "value": "117",
+                "type": "String"
+            },
+            "118": {
+                "value": "118",
+                "type": "String"
+            },
+            "119": {
+                "value": "119",
+                "type": "String"
+            },
+            "120": {
+                "value": "120",
+                "type": "String"
+            },
+            "121": {
+                "value": "121",
+                "type": "String"
+            },
+            "122": {
+                "value": "122",
+                "type": "String"
+            },
+            "123": {
+                "value": "123",
+                "type": "String"
+            },
+            "124": {
+                "value": "124",
+                "type": "String"
+            },
+            "125": {
+                "value": "125",
+                "type": "String"
+            },
+            "126": {
+                "value": "126",
+                "type": "String"
+            },
+            "127": {
+                "value": "127",
+                "type": "String"
+            },
+            "128": {
+                "value": "128",
+                "type": "String"
+            },
+            "129": {
+                "value": "129",
+                "type": "String"
+            },
+            "130": {
+                "value": "130",
+                "type": "String"
+            },
+            "131": {
+                "value": "131",
+                "type": "String"
+            },
+            "132": {
+                "value": "132",
+                "type": "String"
+            },
+            "133": {
+                "value": "133",
+                "type": "String"
+            },
+            "134": {
+                "value": "134",
+                "type": "String"
+            },
+            "135": {
+                "value": "135",
+                "type": "String"
+            },
+            "136": {
+                "value": "136",
+                "type": "String"
+            },
+            "137": {
+                "value": "137",
+                "type": "String"
+            },
+            "138": {
+                "value": "138",
+                "type": "String"
+            },
+            "139": {
+                "value": "139",
+                "type": "String"
+            },
+            "140": {
+                "value": "140",
+                "type": "String"
+            },
+            "141": {
+                "value": "141",
+                "type": "String"
+            },
+            "142": {
+                "value": "142",
+                "type": "String"
+            },
+            "143": {
+                "value": "143",
+                "type": "String"
+            },
+            "144": {
+                "value": "144",
+                "type": "String"
+            },
+            "145": {
+                "value": "145",
+                "type": "String"
+            },
+            "146": {
+                "value": "146",
+                "type": "String"
+            },
+            "147": {
+                "value": "147",
+                "type": "String"
+            },
+            "148": {
+                "value": "148",
+                "type": "String"
+            },
+            "149": {
+                "value": "149",
+                "type": "String"
+            },
+            "150": {
+                "value": "150",
+                "type": "String"
+            },
+            "151": {
+                "value": "151",
+                "type": "String"
+            },
+            "152": {
+                "value": "152",
+                "type": "String"
+            },
+            "153": {
+                "value": "153",
+                "type": "String"
+            },
+            "154": {
+                "value": "154",
+                "type": "String"
+            },
+            "155": {
+                "value": "155",
+                "type": "String"
+            },
+            "156": {
+                "value": "156",
+                "type": "String"
+            },
+            "157": {
+                "value": "157",
+                "type": "String"
+            },
+            "158": {
+                "value": "158",
+                "type": "String"
+            },
+            "159": {
+                "value": "159",
+                "type": "String"
+            },
+            "160": {
+                "value": "160",
+                "type": "String"
+            },
+            "161": {
+                "value": "161",
+                "type": "String"
+            },
+            "162": {
+                "value": "162",
+                "type": "String"
+            },
+            "163": {
+                "value": "163",
+                "type": "String"
+            },
+            "164": {
+                "value": "164",
+                "type": "String"
+            },
+            "165": {
+                "value": "165",
+                "type": "String"
+            },
+            "166": {
+                "value": "166",
+                "type": "String"
+            },
+            "167": {
+                "value": "167",
+                "type": "String"
+            },
+            "168": {
+                "value": "168",
+                "type": "String"
+            },
+            "169": {
+                "value": "169",
+                "type": "String"
+            },
+            "170": {
+                "value": "170",
+                "type": "String"
+            },
+            "171": {
+                "value": "171",
+                "type": "String"
+            },
+            "172": {
+                "value": "172",
+                "type": "String"
+            },
+            "173": {
+                "value": "173",
+                "type": "String"
+            },
+            "174": {
+                "value": "174",
+                "type": "String"
+            },
+            "175": {
+                "value": "175",
+                "type": "String"
+            },
+            "176": {
+                "value": "176",
+                "type": "String"
+            },
+            "177": {
+                "value": "177",
+                "type": "String"
+            },
+            "178": {
+                "value": "178",
+                "type": "String"
+            },
+            "179": {
+                "value": "179",
+                "type": "String"
+            },
+            "180": {
+                "value": "180",
+                "type": "String"
+            },
+            "181": {
+                "value": "181",
+                "type": "String"
+            },
+            "182": {
+                "value": "182",
+                "type": "String"
+            },
+            "183": {
+                "value": "183",
+                "type": "String"
+            },
+            "184": {
+                "value": "184",
+                "type": "String"
+            },
+            "185": {
+                "value": "185",
+                "type": "String"
+            },
+            "186": {
+                "value": "186",
+                "type": "String"
+            },
+            "187": {
+                "value": "187",
+                "type": "String"
+            },
+            "188": {
+                "value": "188",
+                "type": "String"
+            },
+            "189": {
+                "value": "189",
+                "type": "String"
+            },
+            "190": {
+                "value": "190",
+                "type": "String"
+            },
+            "191": {
+                "value": "191",
+                "type": "String"
+            },
+            "192": {
+                "value": "192",
+                "type": "String"
+            },
+            "193": {
+                "value": "193",
+                "type": "String"
+            },
+            "194": {
+                "value": "194",
+                "type": "String"
+            },
+            "195": {
+                "value": "195",
+                "type": "String"
+            },
+            "196": {
+                "value": "196",
+                "type": "String"
+            },
+            "197": {
+                "value": "197",
+                "type": "String"
+            },
+            "198": {
+                "value": "198",
+                "type": "String"
+            },
+            "199": {
+                "value": "199",
+                "type": "String"
+            },
+            "200": {
+                "value": "200",
+                "type": "String"
+            },
+            "201": {
+                "value": "201",
+                "type": "String"
+            },
+            "202": {
+                "value": "202",
+                "type": "String"
+            },
+            "203": {
+                "value": "203",
+                "type": "String"
+            },
+            "204": {
+                "value": "204",
+                "type": "String"
+            },
+            "205": {
+                "value": "205",
+                "type": "String"
+            },
+            "206": {
+                "value": "206",
+                "type": "String"
+            },
+            "207": {
+                "value": "207",
+                "type": "String"
+            },
+            "208": {
+                "value": "208",
+                "type": "String"
+            },
+            "209": {
+                "value": "209",
+                "type": "String"
+            },
+            "210": {
+                "value": "210",
+                "type": "String"
+            },
+            "211": {
+                "value": "211",
+                "type": "String"
+            },
+            "212": {
+                "value": "212",
+                "type": "String"
+            },
+            "213": {
+                "value": "213",
+                "type": "String"
+            },
+            "214": {
+                "value": "214",
+                "type": "String"
+            },
+            "215": {
+                "value": "215",
+                "type": "String"
+            },
+            "216": {
+                "value": "216",
+                "type": "String"
+            },
+            "217": {
+                "value": "217",
+                "type": "String"
+            },
+            "218": {
+                "value": "218",
+                "type": "String"
+            },
+            "219": {
+                "value": "219",
+                "type": "String"
+            },
+            "220": {
+                "value": "220",
+                "type": "String"
+            },
+            "221": {
+                "value": "221",
+                "type": "String"
+            },
+            "222": {
+                "value": "222",
+                "type": "String"
+            },
+            "223": {
+                "value": "223",
+                "type": "String"
+            },
+            "224": {
+                "value": "224",
+                "type": "String"
+            },
+            "225": {
+                "value": "225",
+                "type": "String"
+            },
+            "226": {
+                "value": "226",
+                "type": "String"
+            },
+            "227": {
+                "value": "227",
+                "type": "String"
+            },
+            "228": {
+                "value": "228",
+                "type": "String"
+            },
+            "229": {
+                "value": "229",
+                "type": "String"
+            },
+            "230": {
+                "value": "230",
+                "type": "String"
+            },
+            "231": {
+                "value": "231",
+                "type": "String"
+            },
+            "232": {
+                "value": "232",
+                "type": "String"
+            },
+            "233": {
+                "value": "233",
+                "type": "String"
+            },
+            "234": {
+                "value": "234",
+                "type": "String"
+            },
+            "235": {
+                "value": "235",
+                "type": "String"
+            },
+            "236": {
+                "value": "236",
+                "type": "String"
+            },
+            "237": {
+                "value": "237",
+                "type": "String"
+            },
+            "238": {
+                "value": "238",
+                "type": "String"
+            },
+            "239": {
+                "value": "239",
+                "type": "String"
+            },
+            "240": {
+                "value": "240",
+                "type": "String"
+            },
+            "241": {
+                "value": "241",
+                "type": "String"
+            },
+            "242": {
+                "value": "242",
+                "type": "String"
+            },
+            "243": {
+                "value": "243",
+                "type": "String"
+            },
+            "244": {
+                "value": "244",
+                "type": "String"
+            },
+            "245": {
+                "value": "245",
+                "type": "String"
+            },
+            "246": {
+                "value": "246",
+                "type": "String"
+            },
+            "247": {
+                "value": "247",
+                "type": "String"
+            },
+            "248": {
+                "value": "248",
+                "type": "String"
+            },
+            "249": {
+                "value": "249",
+                "type": "String"
+            },
+            "250": {
+                "value": "250",
+                "type": "String"
+            },
+            "251": {
+                "value": "251",
+                "type": "String"
+            },
+            "252": {
+                "value": "252",
+                "type": "String"
+            },
+            "253": {
+                "value": "253",
+                "type": "String"
+            },
+            "254": {
+                "value": "254",
+                "type": "String"
+            },
+            "255": {
+                "value": "255",
+                "type": "String"
+            }
+        }
     },
     "xfuncs": {
         "main": {
             "ElementName": "xfunction",
             "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
-            "children": [],
+            "children": [
+                {
+                    "ElementName": "new",
+                    "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                    "children": [
+                        "__main__"
+                    ],
+                    "attrs": {
+                        "type": "String",
+                        "setas": "__name__"
+                    },
+                    "striped": [
+                        "__main__"
+                    ],
+                    "strings": [
+                        "__main__"
+                    ],
+                    "xml": "<new setas=\"__name__\" type=\"String\">__main__</new>"
+                },
+                {
+                    "ElementName": "autofill",
+                    "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                    "children": [],
+                    "attrs": {},
+                    "striped": [],
+                    "strings": [],
+                    "xml": "<autofill/>"
+                },
+                {
+                    "ElementName": "if",
+                    "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                    "children": [
+                        {
+                            "ElementName": "ifcond",
+                            "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                            "children": [],
+                            "attrs": {
+                                "left": "__name",
+                                "equals": "==",
+                                "right": "__name__"
+                            },
+                            "striped": [],
+                            "strings": [],
+                            "xml": "<ifcond equals=\"==\" left=\"__name\" right=\"__name__\"/>"
+                        },
+                        {
+                            "ElementName": "ifcond",
+                            "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                            "children": [],
+                            "attrs": {
+                                "left": "666",
+                                "equals": "==",
+                                "rightStr": "6"
+                            },
+                            "striped": [],
+                            "strings": [],
+                            "xml": "<ifcond equals=\"==\" left=\"666\" rightStr=\"6\"/>"
+                        },
+                        {
+                            "ElementName": "ifbody",
+                            "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                            "children": [
+                                {
+                                    "ElementName": "xout",
+                                    "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                                    "children": [
+                                        "you made it"
+                                    ],
+                                    "attrs": {},
+                                    "striped": [
+                                        "you made it"
+                                    ],
+                                    "strings": [
+                                        "you made it"
+                                    ],
+                                    "xml": "<xout>you made it</xout>"
+                                }
+                            ],
+                            "attrs": {},
+                            "striped": [
+                                "you made it"
+                            ],
+                            "strings": [
+                                "\n",
+                                "you made it",
+                                "\n"
+                            ],
+                            "xml": "<ifbody>\n<xout>you made it</xout>\n</ifbody>"
+                        }
+                    ],
+                    "attrs": {},
+                    "striped": [
+                        "you made it"
+                    ],
+                    "strings": [
+                        "\n",
+                        "\n",
+                        "\n",
+                        "you made it",
+                        "\n"
+                    ],
+                    "xml": "<if><ifcond equals=\"==\" left=\"__name\" right=\"__name__\"/>\n<ifcond equals=\"==\" left=\"666\" rightStr=\"6\"/>\n<ifbody>\n<xout>you made it</xout>\n</ifbody></if>"
+                }
+            ],
             "attrs": {
                 "xname": "main",
-                "xmlns:car": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php"
+                "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php"
             },
-            "striped": [],
+            "striped": [
+                "__main__",
+                "you made it"
+            ],
             "strings": [
+                "\n",
+                "__main__",
+                "\n",
+                "\n",
+                "\n",
+                "\n",
+                "\n",
+                "you made it",
                 "\n"
             ],
-            "xml": "<car:xfunction xmlns:car=\"https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php\" xname=\"main\">\n</car:xfunction>",
-            "vardict": {}
+            "xml": "<xfunction xmlns=\"https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php\" xname=\"main\">\n<new setas=\"__name__\" type=\"String\">__main__</new>\n<autofill/>\n<if><ifcond equals=\"==\" left=\"__name\" right=\"__name__\"/>\n<ifcond equals=\"==\" left=\"666\" rightStr=\"6\"/>\n<ifbody>\n<xout>you made it</xout>\n</ifbody></if></xfunction>",
+            "vardict": {
+                "__name": {
+                    "value": [
+                        "stdString.xml"
+                    ],
+                    "type": "String"
+                },
+                "__name__": {
+                    "value": [
+                        "__main__"
+                    ],
+                    "type": "String"
+                },
+                "-5": {
+                    "value": "-5",
+                    "type": "String"
+                },
+                "-4": {
+                    "value": "-4",
+                    "type": "String"
+                },
+                "-3": {
+                    "value": "-3",
+                    "type": "String"
+                },
+                "-2": {
+                    "value": "-2",
+                    "type": "String"
+                },
+                "-1": {
+                    "value": "-1",
+                    "type": "String"
+                },
+                "0": {
+                    "value": "0",
+                    "type": "String"
+                },
+                "1": {
+                    "value": "1",
+                    "type": "String"
+                },
+                "2": {
+                    "value": "2",
+                    "type": "String"
+                },
+                "3": {
+                    "value": "3",
+                    "type": "String"
+                },
+                "4": {
+                    "value": "4",
+                    "type": "String"
+                },
+                "5": {
+                    "value": "5",
+                    "type": "String"
+                },
+                "6": {
+                    "value": "6",
+                    "type": "String"
+                },
+                "7": {
+                    "value": "7",
+                    "type": "String"
+                },
+                "8": {
+                    "value": "8",
+                    "type": "String"
+                },
+                "9": {
+                    "value": "9",
+                    "type": "String"
+                },
+                "10": {
+                    "value": "10",
+                    "type": "String"
+                },
+                "11": {
+                    "value": "11",
+                    "type": "String"
+                },
+                "12": {
+                    "value": "12",
+                    "type": "String"
+                },
+                "13": {
+                    "value": "13",
+                    "type": "String"
+                },
+                "14": {
+                    "value": "14",
+                    "type": "String"
+                },
+                "15": {
+                    "value": "15",
+                    "type": "String"
+                },
+                "16": {
+                    "value": "16",
+                    "type": "String"
+                },
+                "17": {
+                    "value": "17",
+                    "type": "String"
+                },
+                "18": {
+                    "value": "18",
+                    "type": "String"
+                },
+                "19": {
+                    "value": "19",
+                    "type": "String"
+                },
+                "20": {
+                    "value": "20",
+                    "type": "String"
+                },
+                "21": {
+                    "value": "21",
+                    "type": "String"
+                },
+                "22": {
+                    "value": "22",
+                    "type": "String"
+                },
+                "23": {
+                    "value": "23",
+                    "type": "String"
+                },
+                "24": {
+                    "value": "24",
+                    "type": "String"
+                },
+                "25": {
+                    "value": "25",
+                    "type": "String"
+                },
+                "26": {
+                    "value": "26",
+                    "type": "String"
+                },
+                "27": {
+                    "value": "27",
+                    "type": "String"
+                },
+                "28": {
+                    "value": "28",
+                    "type": "String"
+                },
+                "29": {
+                    "value": "29",
+                    "type": "String"
+                },
+                "30": {
+                    "value": "30",
+                    "type": "String"
+                },
+                "31": {
+                    "value": "31",
+                    "type": "String"
+                },
+                "32": {
+                    "value": "32",
+                    "type": "String"
+                },
+                "33": {
+                    "value": "33",
+                    "type": "String"
+                },
+                "34": {
+                    "value": "34",
+                    "type": "String"
+                },
+                "35": {
+                    "value": "35",
+                    "type": "String"
+                },
+                "36": {
+                    "value": "36",
+                    "type": "String"
+                },
+                "37": {
+                    "value": "37",
+                    "type": "String"
+                },
+                "38": {
+                    "value": "38",
+                    "type": "String"
+                },
+                "39": {
+                    "value": "39",
+                    "type": "String"
+                },
+                "40": {
+                    "value": "40",
+                    "type": "String"
+                },
+                "41": {
+                    "value": "41",
+                    "type": "String"
+                },
+                "42": {
+                    "value": "42",
+                    "type": "String"
+                },
+                "43": {
+                    "value": "43",
+                    "type": "String"
+                },
+                "44": {
+                    "value": "44",
+                    "type": "String"
+                },
+                "45": {
+                    "value": "45",
+                    "type": "String"
+                },
+                "46": {
+                    "value": "46",
+                    "type": "String"
+                },
+                "47": {
+                    "value": "47",
+                    "type": "String"
+                },
+                "48": {
+                    "value": "48",
+                    "type": "String"
+                },
+                "49": {
+                    "value": "49",
+                    "type": "String"
+                },
+                "50": {
+                    "value": "50",
+                    "type": "String"
+                },
+                "51": {
+                    "value": "51",
+                    "type": "String"
+                },
+                "52": {
+                    "value": "52",
+                    "type": "String"
+                },
+                "53": {
+                    "value": "53",
+                    "type": "String"
+                },
+                "54": {
+                    "value": "54",
+                    "type": "String"
+                },
+                "55": {
+                    "value": "55",
+                    "type": "String"
+                },
+                "56": {
+                    "value": "56",
+                    "type": "String"
+                },
+                "57": {
+                    "value": "57",
+                    "type": "String"
+                },
+                "58": {
+                    "value": "58",
+                    "type": "String"
+                },
+                "59": {
+                    "value": "59",
+                    "type": "String"
+                },
+                "60": {
+                    "value": "60",
+                    "type": "String"
+                },
+                "61": {
+                    "value": "61",
+                    "type": "String"
+                },
+                "62": {
+                    "value": "62",
+                    "type": "String"
+                },
+                "63": {
+                    "value": "63",
+                    "type": "String"
+                },
+                "64": {
+                    "value": "64",
+                    "type": "String"
+                },
+                "65": {
+                    "value": "65",
+                    "type": "String"
+                },
+                "66": {
+                    "value": "66",
+                    "type": "String"
+                },
+                "67": {
+                    "value": "67",
+                    "type": "String"
+                },
+                "68": {
+                    "value": "68",
+                    "type": "String"
+                },
+                "69": {
+                    "value": "69",
+                    "type": "String"
+                },
+                "70": {
+                    "value": "70",
+                    "type": "String"
+                },
+                "71": {
+                    "value": "71",
+                    "type": "String"
+                },
+                "72": {
+                    "value": "72",
+                    "type": "String"
+                },
+                "73": {
+                    "value": "73",
+                    "type": "String"
+                },
+                "74": {
+                    "value": "74",
+                    "type": "String"
+                },
+                "75": {
+                    "value": "75",
+                    "type": "String"
+                },
+                "76": {
+                    "value": "76",
+                    "type": "String"
+                },
+                "77": {
+                    "value": "77",
+                    "type": "String"
+                },
+                "78": {
+                    "value": "78",
+                    "type": "String"
+                },
+                "79": {
+                    "value": "79",
+                    "type": "String"
+                },
+                "80": {
+                    "value": "80",
+                    "type": "String"
+                },
+                "81": {
+                    "value": "81",
+                    "type": "String"
+                },
+                "82": {
+                    "value": "82",
+                    "type": "String"
+                },
+                "83": {
+                    "value": "83",
+                    "type": "String"
+                },
+                "84": {
+                    "value": "84",
+                    "type": "String"
+                },
+                "85": {
+                    "value": "85",
+                    "type": "String"
+                },
+                "86": {
+                    "value": "86",
+                    "type": "String"
+                },
+                "87": {
+                    "value": "87",
+                    "type": "String"
+                },
+                "88": {
+                    "value": "88",
+                    "type": "String"
+                },
+                "89": {
+                    "value": "89",
+                    "type": "String"
+                },
+                "90": {
+                    "value": "90",
+                    "type": "String"
+                },
+                "91": {
+                    "value": "91",
+                    "type": "String"
+                },
+                "92": {
+                    "value": "92",
+                    "type": "String"
+                },
+                "93": {
+                    "value": "93",
+                    "type": "String"
+                },
+                "94": {
+                    "value": "94",
+                    "type": "String"
+                },
+                "95": {
+                    "value": "95",
+                    "type": "String"
+                },
+                "96": {
+                    "value": "96",
+                    "type": "String"
+                },
+                "97": {
+                    "value": "97",
+                    "type": "String"
+                },
+                "98": {
+                    "value": "98",
+                    "type": "String"
+                },
+                "99": {
+                    "value": "99",
+                    "type": "String"
+                },
+                "100": {
+                    "value": "100",
+                    "type": "String"
+                },
+                "101": {
+                    "value": "101",
+                    "type": "String"
+                },
+                "102": {
+                    "value": "102",
+                    "type": "String"
+                },
+                "103": {
+                    "value": "103",
+                    "type": "String"
+                },
+                "104": {
+                    "value": "104",
+                    "type": "String"
+                },
+                "105": {
+                    "value": "105",
+                    "type": "String"
+                },
+                "106": {
+                    "value": "106",
+                    "type": "String"
+                },
+                "107": {
+                    "value": "107",
+                    "type": "String"
+                },
+                "108": {
+                    "value": "108",
+                    "type": "String"
+                },
+                "109": {
+                    "value": "109",
+                    "type": "String"
+                },
+                "110": {
+                    "value": "110",
+                    "type": "String"
+                },
+                "111": {
+                    "value": "111",
+                    "type": "String"
+                },
+                "112": {
+                    "value": "112",
+                    "type": "String"
+                },
+                "113": {
+                    "value": "113",
+                    "type": "String"
+                },
+                "114": {
+                    "value": "114",
+                    "type": "String"
+                },
+                "115": {
+                    "value": "115",
+                    "type": "String"
+                },
+                "116": {
+                    "value": "116",
+                    "type": "String"
+                },
+                "117": {
+                    "value": "117",
+                    "type": "String"
+                },
+                "118": {
+                    "value": "118",
+                    "type": "String"
+                },
+                "119": {
+                    "value": "119",
+                    "type": "String"
+                },
+                "120": {
+                    "value": "120",
+                    "type": "String"
+                },
+                "121": {
+                    "value": "121",
+                    "type": "String"
+                },
+                "122": {
+                    "value": "122",
+                    "type": "String"
+                },
+                "123": {
+                    "value": "123",
+                    "type": "String"
+                },
+                "124": {
+                    "value": "124",
+                    "type": "String"
+                },
+                "125": {
+                    "value": "125",
+                    "type": "String"
+                },
+                "126": {
+                    "value": "126",
+                    "type": "String"
+                },
+                "127": {
+                    "value": "127",
+                    "type": "String"
+                },
+                "128": {
+                    "value": "128",
+                    "type": "String"
+                },
+                "129": {
+                    "value": "129",
+                    "type": "String"
+                },
+                "130": {
+                    "value": "130",
+                    "type": "String"
+                },
+                "131": {
+                    "value": "131",
+                    "type": "String"
+                },
+                "132": {
+                    "value": "132",
+                    "type": "String"
+                },
+                "133": {
+                    "value": "133",
+                    "type": "String"
+                },
+                "134": {
+                    "value": "134",
+                    "type": "String"
+                },
+                "135": {
+                    "value": "135",
+                    "type": "String"
+                },
+                "136": {
+                    "value": "136",
+                    "type": "String"
+                },
+                "137": {
+                    "value": "137",
+                    "type": "String"
+                },
+                "138": {
+                    "value": "138",
+                    "type": "String"
+                },
+                "139": {
+                    "value": "139",
+                    "type": "String"
+                },
+                "140": {
+                    "value": "140",
+                    "type": "String"
+                },
+                "141": {
+                    "value": "141",
+                    "type": "String"
+                },
+                "142": {
+                    "value": "142",
+                    "type": "String"
+                },
+                "143": {
+                    "value": "143",
+                    "type": "String"
+                },
+                "144": {
+                    "value": "144",
+                    "type": "String"
+                },
+                "145": {
+                    "value": "145",
+                    "type": "String"
+                },
+                "146": {
+                    "value": "146",
+                    "type": "String"
+                },
+                "147": {
+                    "value": "147",
+                    "type": "String"
+                },
+                "148": {
+                    "value": "148",
+                    "type": "String"
+                },
+                "149": {
+                    "value": "149",
+                    "type": "String"
+                },
+                "150": {
+                    "value": "150",
+                    "type": "String"
+                },
+                "151": {
+                    "value": "151",
+                    "type": "String"
+                },
+                "152": {
+                    "value": "152",
+                    "type": "String"
+                },
+                "153": {
+                    "value": "153",
+                    "type": "String"
+                },
+                "154": {
+                    "value": "154",
+                    "type": "String"
+                },
+                "155": {
+                    "value": "155",
+                    "type": "String"
+                },
+                "156": {
+                    "value": "156",
+                    "type": "String"
+                },
+                "157": {
+                    "value": "157",
+                    "type": "String"
+                },
+                "158": {
+                    "value": "158",
+                    "type": "String"
+                },
+                "159": {
+                    "value": "159",
+                    "type": "String"
+                },
+                "160": {
+                    "value": "160",
+                    "type": "String"
+                },
+                "161": {
+                    "value": "161",
+                    "type": "String"
+                },
+                "162": {
+                    "value": "162",
+                    "type": "String"
+                },
+                "163": {
+                    "value": "163",
+                    "type": "String"
+                },
+                "164": {
+                    "value": "164",
+                    "type": "String"
+                },
+                "165": {
+                    "value": "165",
+                    "type": "String"
+                },
+                "166": {
+                    "value": "166",
+                    "type": "String"
+                },
+                "167": {
+                    "value": "167",
+                    "type": "String"
+                },
+                "168": {
+                    "value": "168",
+                    "type": "String"
+                },
+                "169": {
+                    "value": "169",
+                    "type": "String"
+                },
+                "170": {
+                    "value": "170",
+                    "type": "String"
+                },
+                "171": {
+                    "value": "171",
+                    "type": "String"
+                },
+                "172": {
+                    "value": "172",
+                    "type": "String"
+                },
+                "173": {
+                    "value": "173",
+                    "type": "String"
+                },
+                "174": {
+                    "value": "174",
+                    "type": "String"
+                },
+                "175": {
+                    "value": "175",
+                    "type": "String"
+                },
+                "176": {
+                    "value": "176",
+                    "type": "String"
+                },
+                "177": {
+                    "value": "177",
+                    "type": "String"
+                },
+                "178": {
+                    "value": "178",
+                    "type": "String"
+                },
+                "179": {
+                    "value": "179",
+                    "type": "String"
+                },
+                "180": {
+                    "value": "180",
+                    "type": "String"
+                },
+                "181": {
+                    "value": "181",
+                    "type": "String"
+                },
+                "182": {
+                    "value": "182",
+                    "type": "String"
+                },
+                "183": {
+                    "value": "183",
+                    "type": "String"
+                },
+                "184": {
+                    "value": "184",
+                    "type": "String"
+                },
+                "185": {
+                    "value": "185",
+                    "type": "String"
+                },
+                "186": {
+                    "value": "186",
+                    "type": "String"
+                },
+                "187": {
+                    "value": "187",
+                    "type": "String"
+                },
+                "188": {
+                    "value": "188",
+                    "type": "String"
+                },
+                "189": {
+                    "value": "189",
+                    "type": "String"
+                },
+                "190": {
+                    "value": "190",
+                    "type": "String"
+                },
+                "191": {
+                    "value": "191",
+                    "type": "String"
+                },
+                "192": {
+                    "value": "192",
+                    "type": "String"
+                },
+                "193": {
+                    "value": "193",
+                    "type": "String"
+                },
+                "194": {
+                    "value": "194",
+                    "type": "String"
+                },
+                "195": {
+                    "value": "195",
+                    "type": "String"
+                },
+                "196": {
+                    "value": "196",
+                    "type": "String"
+                },
+                "197": {
+                    "value": "197",
+                    "type": "String"
+                },
+                "198": {
+                    "value": "198",
+                    "type": "String"
+                },
+                "199": {
+                    "value": "199",
+                    "type": "String"
+                },
+                "200": {
+                    "value": "200",
+                    "type": "String"
+                },
+                "201": {
+                    "value": "201",
+                    "type": "String"
+                },
+                "202": {
+                    "value": "202",
+                    "type": "String"
+                },
+                "203": {
+                    "value": "203",
+                    "type": "String"
+                },
+                "204": {
+                    "value": "204",
+                    "type": "String"
+                },
+                "205": {
+                    "value": "205",
+                    "type": "String"
+                },
+                "206": {
+                    "value": "206",
+                    "type": "String"
+                },
+                "207": {
+                    "value": "207",
+                    "type": "String"
+                },
+                "208": {
+                    "value": "208",
+                    "type": "String"
+                },
+                "209": {
+                    "value": "209",
+                    "type": "String"
+                },
+                "210": {
+                    "value": "210",
+                    "type": "String"
+                },
+                "211": {
+                    "value": "211",
+                    "type": "String"
+                },
+                "212": {
+                    "value": "212",
+                    "type": "String"
+                },
+                "213": {
+                    "value": "213",
+                    "type": "String"
+                },
+                "214": {
+                    "value": "214",
+                    "type": "String"
+                },
+                "215": {
+                    "value": "215",
+                    "type": "String"
+                },
+                "216": {
+                    "value": "216",
+                    "type": "String"
+                },
+                "217": {
+                    "value": "217",
+                    "type": "String"
+                },
+                "218": {
+                    "value": "218",
+                    "type": "String"
+                },
+                "219": {
+                    "value": "219",
+                    "type": "String"
+                },
+                "220": {
+                    "value": "220",
+                    "type": "String"
+                },
+                "221": {
+                    "value": "221",
+                    "type": "String"
+                },
+                "222": {
+                    "value": "222",
+                    "type": "String"
+                },
+                "223": {
+                    "value": "223",
+                    "type": "String"
+                },
+                "224": {
+                    "value": "224",
+                    "type": "String"
+                },
+                "225": {
+                    "value": "225",
+                    "type": "String"
+                },
+                "226": {
+                    "value": "226",
+                    "type": "String"
+                },
+                "227": {
+                    "value": "227",
+                    "type": "String"
+                },
+                "228": {
+                    "value": "228",
+                    "type": "String"
+                },
+                "229": {
+                    "value": "229",
+                    "type": "String"
+                },
+                "230": {
+                    "value": "230",
+                    "type": "String"
+                },
+                "231": {
+                    "value": "231",
+                    "type": "String"
+                },
+                "232": {
+                    "value": "232",
+                    "type": "String"
+                },
+                "233": {
+                    "value": "233",
+                    "type": "String"
+                },
+                "234": {
+                    "value": "234",
+                    "type": "String"
+                },
+                "235": {
+                    "value": "235",
+                    "type": "String"
+                },
+                "236": {
+                    "value": "236",
+                    "type": "String"
+                },
+                "237": {
+                    "value": "237",
+                    "type": "String"
+                },
+                "238": {
+                    "value": "238",
+                    "type": "String"
+                },
+                "239": {
+                    "value": "239",
+                    "type": "String"
+                },
+                "240": {
+                    "value": "240",
+                    "type": "String"
+                },
+                "241": {
+                    "value": "241",
+                    "type": "String"
+                },
+                "242": {
+                    "value": "242",
+                    "type": "String"
+                },
+                "243": {
+                    "value": "243",
+                    "type": "String"
+                },
+                "244": {
+                    "value": "244",
+                    "type": "String"
+                },
+                "245": {
+                    "value": "245",
+                    "type": "String"
+                },
+                "246": {
+                    "value": "246",
+                    "type": "String"
+                },
+                "247": {
+                    "value": "247",
+                    "type": "String"
+                },
+                "248": {
+                    "value": "248",
+                    "type": "String"
+                },
+                "249": {
+                    "value": "249",
+                    "type": "String"
+                },
+                "250": {
+                    "value": "250",
+                    "type": "String"
+                },
+                "251": {
+                    "value": "251",
+                    "type": "String"
+                },
+                "252": {
+                    "value": "252",
+                    "type": "String"
+                },
+                "253": {
+                    "value": "253",
+                    "type": "String"
+                },
+                "254": {
+                    "value": "254",
+                    "type": "String"
+                },
+                "255": {
+                    "value": "255",
+                    "type": "String"
+                }
+            }
         }
     }
 }

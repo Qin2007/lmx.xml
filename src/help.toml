@@ -1,0 +1,78 @@
+carver = '0/0/0'
+[help]
+help = '''first specify the xmlns for my parser its "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php"
+then a short description of my tags
+==waring:almost all variables that start with __ and have special meaning'''
+xfunction = '''
+a xfunction isd like a function in other languages
+a xfunction Object takes a xname="" and if it is main then it becomes the first function to be ran
+'''
+
+xout = '''
+the xout tag is a literal print
+you MUST not format with xml in xout tags'''
+
+xecho = '''
+is a tag for outputting variables
+currently no global variables exist
+the var="" specifies the variable outputted
+'''
+
+xfor = '''the xfor is a for loop
+it takes 4 arguments var="" start="" stop="" step=""
+
+var="the variable to assign"
+(
+start="the start of the loop, included"
+stop="the end of the loop, excluded"
+step="the increment of the loop"
+xor
+loopto="the variable to loop through"
+)
+
+this snuippet of code
+
+<xfor var="x" start="0" stop="52" step="3">
+    <xecho var="x"/>
+</xfor>
+
+is equivalant of this python
+
+for x in range(0,52,3):
+    print(x)'''
+
+xcall = '''
+takes a xname="" to call the named function
+a xcall can also take a returnto="" to set a return value'''
+return = '''returns var.
+var="" the var to be returned'''
+
+new = '''creates a new value
+
+type="" oneof
+--datetime, value is ignored
+--String, value="the string"
+--number, value="the number"
+--Array, supply a list of li elements belonging to the parser's xmlns
+
+setas="" the resulting variable, if part of array MUST not be present'''
+
+include = '''
+include all functions of src="" adding the prefix of as="" then a dot'''
+if = 'an if statement, has as children'
+ifcond = '''<Ifcond> an If condition, has four attributes
+left="" the left of the operator
+right="" the right of an operator
+equals="" the operator, oneof
+--==, double equals, equallity matching
+-->, grater than (careful of comments)
+--<, leff than,
+--!=, not equals
+
+setleftas="" is mutally exclusive to left and asks user for input, this value can be compared to right="", setleft as is prioritized
+rightstr="" right as a string, right is prioritized'''
+
+toString = '''transforms any variable to a string
+var="the var to replace"'''
+
+END=''

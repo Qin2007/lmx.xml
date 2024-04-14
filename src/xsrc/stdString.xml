@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<car:xfunction xmlns:car="https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php" xname="main">
-
-</car:xfunction>
+<xfunction xmlns="https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php" xname="main">
+    <new type="String" setas="__name__">__main__</new>
+    <autofill/>
+    <if><ifcond left="__name" equals="==" right="__name__"/>
+        <ifcond left="666" equals="==" rightStr="6"/>
+        <ifbody>
+            <xout>you made it</xout>
+        </ifbody>
+    </if>
+</xfunction>

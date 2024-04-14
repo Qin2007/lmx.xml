@@ -4,73 +4,517 @@
         "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
         "children": [
             {
-                "ElementName": "include",
-                "xmlns": null,
-                "children": [],
-                "attrs": {
-                    "src": "stdString.xml",
-                    "as": "String"
-                },
-                "striped": [],
-                "strings": [],
-                "xml": "<include as=\"String\" src=\"stdString.xml\"/>"
-            },
-            {
-                "ElementName": "include",
-                "xmlns": null,
-                "children": [],
-                "attrs": {
-                    "src": "stdArray.xml",
-                    "as": "array"
-                },
-                "striped": [],
-                "strings": [],
-                "xml": "<include as=\"array\" src=\"stdArray.xml\"/>"
-            },
-            {
                 "ElementName": "new",
-                "xmlns": null,
+                "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
                 "children": [
                     {
-                        "ElementName": "li",
-                        "xmlns": null,
+                        "ElementName": "new",
+                        "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
                         "children": [
                             {
                                 "ElementName": "new",
-                                "xmlns": null,
+                                "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                                "children": [
+                                    "what is 5 + 7"
+                                ],
+                                "attrs": {
+                                    "type": "String",
+                                    "setas": "xmlns8923"
+                                },
+                                "striped": [
+                                    "what is 5 + 7"
+                                ],
+                                "strings": [
+                                    "what is 5 + 7"
+                                ],
+                                "xml": "<new type=\"String\">what is 5 + 7</new>"
+                            },
+                            {
+                                "ElementName": "new",
+                                "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                                "children": [
+                                    "16"
+                                ],
+                                "attrs": {
+                                    "type": "String",
+                                    "setas": "xmlns8923"
+                                },
+                                "striped": [
+                                    "16"
+                                ],
+                                "strings": [
+                                    "16"
+                                ],
+                                "xml": "<new type=\"String\">16</new>"
+                            },
+                            {
+                                "ElementName": "new",
+                                "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                                "children": [
+                                    "12"
+                                ],
+                                "attrs": {
+                                    "type": "String",
+                                    "setas": "xmlns8923"
+                                },
+                                "striped": [
+                                    "12"
+                                ],
+                                "strings": [
+                                    "12"
+                                ],
+                                "xml": "<new type=\"String\">12</new>"
+                            },
+                            {
+                                "ElementName": "new",
+                                "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
                                 "children": [],
-                                "attrs": {},
+                                "attrs": {
+                                    "type": "datetime",
+                                    "setas": "xmlns8923"
+                                },
                                 "striped": [],
                                 "strings": [],
-                                "xml": "<new/>"
+                                "xml": "<new type=\"datetime\"/>"
+                            },
+                            {
+                                "ElementName": "new",
+                                "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                                "children": [
+                                    "11"
+                                ],
+                                "attrs": {
+                                    "type": "String",
+                                    "setas": "xmlns8923"
+                                },
+                                "striped": [
+                                    "11"
+                                ],
+                                "strings": [
+                                    "11"
+                                ],
+                                "xml": "<new type=\"String\">11</new>"
+                            },
+                            {
+                                "ElementName": "new",
+                                "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                                "children": [
+                                    "13"
+                                ],
+                                "attrs": {
+                                    "type": "String",
+                                    "setas": "xmlns8923"
+                                },
+                                "striped": [
+                                    "13"
+                                ],
+                                "strings": [
+                                    "13"
+                                ],
+                                "xml": "<new type=\"String\">13</new>"
+                            },
+                            {
+                                "ElementName": "new",
+                                "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                                "children": [
+                                    "4"
+                                ],
+                                "attrs": {
+                                    "type": "String",
+                                    "setas": "xmlns8923"
+                                },
+                                "striped": [
+                                    "4"
+                                ],
+                                "strings": [
+                                    "4"
+                                ],
+                                "xml": "<new type=\"String\">4</new>"
+                            }
+                        ],
+                        "attrs": {
+                            "type": "Array",
+                            "setas": "xmlns8923"
+                        },
+                        "striped": [
+                            "what is 5 + 7",
+                            "16",
+                            "12",
+                            "11",
+                            "13",
+                            "4"
+                        ],
+                        "strings": [
+                            "\n",
+                            "what is 5 + 7",
+                            "\n",
+                            "16",
+                            "\n",
+                            "12",
+                            "\n",
+                            "\n",
+                            "11",
+                            "\n",
+                            "13",
+                            "\n",
+                            "4",
+                            "\n"
+                        ],
+                        "xml": "<new type=\"Array\">\n<new type=\"String\">what is 5 + 7</new>\n<new type=\"String\">16</new>\n<new type=\"String\">12</new>\n<new type=\"datetime\"/>\n<new type=\"String\">11</new>\n<new type=\"String\">13</new>\n<new type=\"String\">4</new>\n</new>"
+                    },
+                    {
+                        "ElementName": "new",
+                        "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                        "children": [
+                            {
+                                "ElementName": "new",
+                                "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                                "children": [
+                                    "what is 11+ 14 +25"
+                                ],
+                                "attrs": {
+                                    "type": "String",
+                                    "setas": "xmlns8923"
+                                },
+                                "striped": [
+                                    "what is 11+ 14 +25"
+                                ],
+                                "strings": [
+                                    "what is 11+ 14 +25"
+                                ],
+                                "xml": "<new type=\"String\">what is 11+ 14 +25</new>"
+                            },
+                            {
+                                "ElementName": "new",
+                                "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                                "children": [
+                                    "42"
+                                ],
+                                "attrs": {
+                                    "type": "String",
+                                    "setas": "xmlns8923"
+                                },
+                                "striped": [
+                                    "42"
+                                ],
+                                "strings": [
+                                    "42"
+                                ],
+                                "xml": "<new type=\"String\">42</new>"
+                            },
+                            {
+                                "ElementName": "new",
+                                "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                                "children": [],
+                                "attrs": {
+                                    "type": "datetime",
+                                    "setas": "xmlns8923"
+                                },
+                                "striped": [],
+                                "strings": [],
+                                "xml": "<new type=\"datetime\"/>"
+                            },
+                            {
+                                "ElementName": "new",
+                                "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                                "children": [
+                                    "50"
+                                ],
+                                "attrs": {
+                                    "type": "String",
+                                    "setas": "xmlns8923"
+                                },
+                                "striped": [
+                                    "50"
+                                ],
+                                "strings": [
+                                    "50"
+                                ],
+                                "xml": "<new type=\"String\">50</new>"
+                            },
+                            {
+                                "ElementName": "new",
+                                "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                                "children": [
+                                    "32"
+                                ],
+                                "attrs": {
+                                    "type": "String",
+                                    "setas": "xmlns8923"
+                                },
+                                "striped": [
+                                    "32"
+                                ],
+                                "strings": [
+                                    "32"
+                                ],
+                                "xml": "<new type=\"String\">32</new>"
+                            },
+                            {
+                                "ElementName": "new",
+                                "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                                "children": [
+                                    "45"
+                                ],
+                                "attrs": {
+                                    "type": "String",
+                                    "setas": "xmlns8923"
+                                },
+                                "striped": [
+                                    "45"
+                                ],
+                                "strings": [
+                                    "45"
+                                ],
+                                "xml": "<new type=\"String\">45</new>"
+                            },
+                            {
+                                "ElementName": "new",
+                                "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                                "children": [
+                                    "2"
+                                ],
+                                "attrs": {
+                                    "type": "String",
+                                    "setas": "xmlns8923"
+                                },
+                                "striped": [
+                                    "2"
+                                ],
+                                "strings": [
+                                    "2"
+                                ],
+                                "xml": "<new type=\"String\">2</new>"
+                            }
+                        ],
+                        "attrs": {
+                            "type": "Array",
+                            "setas": "xmlns8923"
+                        },
+                        "striped": [
+                            "what is 11+ 14 +25",
+                            "42",
+                            "50",
+                            "32",
+                            "45",
+                            "2"
+                        ],
+                        "strings": [
+                            "\n",
+                            "what is 11+ 14 +25",
+                            "\n",
+                            "42",
+                            "\n",
+                            "\n",
+                            "50",
+                            "\n",
+                            "32",
+                            "\n",
+                            "45",
+                            "\n",
+                            "2",
+                            "\n"
+                        ],
+                        "xml": "<new type=\"Array\">\n<new type=\"String\">what is 11+ 14 +25</new>\n<new type=\"String\">42</new>\n<new type=\"datetime\"/>\n<new type=\"String\">50</new>\n<new type=\"String\">32</new>\n<new type=\"String\">45</new>\n<new type=\"String\">2</new>\n</new>"
+                    }
+                ],
+                "attrs": {
+                    "setas": "mtyArray",
+                    "type": "Array"
+                },
+                "striped": [
+                    "what is 5 + 7",
+                    "16",
+                    "12",
+                    "11",
+                    "13",
+                    "4",
+                    "what is 11+ 14 +25",
+                    "42",
+                    "50",
+                    "32",
+                    "45",
+                    "2"
+                ],
+                "strings": [
+                    "\n",
+                    "\n",
+                    "what is 5 + 7",
+                    "\n",
+                    "16",
+                    "\n",
+                    "12",
+                    "\n",
+                    "\n",
+                    "11",
+                    "\n",
+                    "13",
+                    "\n",
+                    "4",
+                    "\n",
+                    "\n",
+                    "\n",
+                    "what is 11+ 14 +25",
+                    "\n",
+                    "42",
+                    "\n",
+                    "\n",
+                    "50",
+                    "\n",
+                    "32",
+                    "\n",
+                    "45",
+                    "\n",
+                    "2",
+                    "\n",
+                    "\n"
+                ],
+                "xml": "<new setas=\"mtyArray\" type=\"Array\">\n<new type=\"Array\">\n<new type=\"String\">what is 5 + 7</new>\n<new type=\"String\">16</new>\n<new type=\"String\">12</new>\n<new type=\"datetime\"/>\n<new type=\"String\">11</new>\n<new type=\"String\">13</new>\n<new type=\"String\">4</new>\n</new>\n<new type=\"Array\">\n<new type=\"String\">what is 11+ 14 +25</new>\n<new type=\"String\">42</new>\n<new type=\"datetime\"/>\n<new type=\"String\">50</new>\n<new type=\"String\">32</new>\n<new type=\"String\">45</new>\n<new type=\"String\">2</new>\n</new>\n</new>"
+            },
+            {
+                "ElementName": "new",
+                "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                "children": [
+                    "hello world"
+                ],
+                "attrs": {
+                    "setas": "Stringx",
+                    "type": "String"
+                },
+                "striped": [
+                    "hello world"
+                ],
+                "strings": [
+                    "hello world"
+                ],
+                "xml": "<new setas=\"Stringx\" type=\"String\">hello world</new>"
+            },
+            {
+                "ElementName": "xfor",
+                "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                "children": [
+                    {
+                        "ElementName": "select",
+                        "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                        "children": [],
+                        "attrs": {
+                            "varto": "xitem",
+                            "from": "item",
+                            "index": "value"
+                        },
+                        "striped": [],
+                        "strings": [],
+                        "xml": "<select from=\"item\" index=\"value\" varto=\"xitem\"/>"
+                    },
+                    {
+                        "ElementName": "xecho",
+                        "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                        "children": [],
+                        "attrs": {
+                            "var": "xitem"
+                        },
+                        "striped": [],
+                        "strings": [],
+                        "xml": "<xecho var=\"xitem\"/>"
+                    },
+                    {
+                        "ElementName": "If",
+                        "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                        "children": [
+                            {
+                                "ElementName": "ifcond",
+                                "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                                "children": [],
+                                "attrs": {
+                                    "left": "Stringx",
+                                    "equals": "===",
+                                    "right": ""
+                                },
+                                "striped": [],
+                                "strings": [],
+                                "xml": "<ifcond equals=\"===\" left=\"Stringx\" right=\"\"/>"
                             }
                         ],
                         "attrs": {},
                         "striped": [],
                         "strings": [
+                            "\n",
                             "\n"
                         ],
-                        "xml": "<li><new/>\n</li>"
+                        "xml": "<If>\n<ifcond equals=\"===\" left=\"Stringx\" right=\"\"/>\n</If>"
                     }
                 ],
                 "attrs": {
-                    "type": "Array"
+                    "loopto": "mtyArray",
+                    "var": "item"
                 },
                 "striped": [],
                 "strings": [
                     "\n",
                     "\n",
+                    "\n",
+                    "\n",
+                    "\n",
                     "\n"
                 ],
-                "xml": "<new type=\"Array\">\n<li><new/>\n</li>\n</new>"
+                "xml": "<xfor loopto=\"mtyArray\" var=\"item\">\n<select from=\"item\" index=\"value\" varto=\"xitem\"/>\n<xecho var=\"xitem\"/>\n<If>\n<ifcond equals=\"===\" left=\"Stringx\" right=\"\"/>\n</If>\n</xfor>"
             }
         ],
         "attrs": {
             "xname": "main",
-            "xmlns:car": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php"
+            "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php"
         },
-        "striped": [],
+        "striped": [
+            "what is 5 + 7",
+            "16",
+            "12",
+            "11",
+            "13",
+            "4",
+            "what is 11+ 14 +25",
+            "42",
+            "50",
+            "32",
+            "45",
+            "2",
+            "hello world"
+        ],
         "strings": [
+            "\n",
+            "\n",
+            "\n",
+            "what is 5 + 7",
+            "\n",
+            "16",
+            "\n",
+            "12",
+            "\n",
+            "\n",
+            "11",
+            "\n",
+            "13",
+            "\n",
+            "4",
+            "\n",
+            "\n",
+            "\n",
+            "what is 11+ 14 +25",
+            "\n",
+            "42",
+            "\n",
+            "\n",
+            "50",
+            "\n",
+            "32",
+            "\n",
+            "45",
+            "\n",
+            "2",
+            "\n",
+            "\n",
+            "\n",
+            "hello world",
+            "\n",
             "\n",
             "\n",
             "\n",
@@ -79,8 +523,116 @@
             "\n",
             "\n"
         ],
-        "xml": "<car:xfunction xmlns:car=\"https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php\" xname=\"main\">\n<include as=\"String\" src=\"stdString.xml\"/>\n<include as=\"array\" src=\"stdArray.xml\"/>\n<new type=\"Array\">\n<li><new/>\n</li>\n</new>\n</car:xfunction>",
-        "vardict": {}
+        "xml": "<xfunction xmlns=\"https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php\" xname=\"main\">\n<new setas=\"mtyArray\" type=\"Array\">\n<new type=\"Array\">\n<new type=\"String\">what is 5 + 7</new>\n<new type=\"String\">16</new>\n<new type=\"String\">12</new>\n<new type=\"datetime\"/>\n<new type=\"String\">11</new>\n<new type=\"String\">13</new>\n<new type=\"String\">4</new>\n</new>\n<new type=\"Array\">\n<new type=\"String\">what is 11+ 14 +25</new>\n<new type=\"String\">42</new>\n<new type=\"datetime\"/>\n<new type=\"String\">50</new>\n<new type=\"String\">32</new>\n<new type=\"String\">45</new>\n<new type=\"String\">2</new>\n</new>\n</new>\n<new setas=\"Stringx\" type=\"String\">hello world</new>\n<xfor loopto=\"mtyArray\" var=\"item\">\n<select from=\"item\" index=\"value\" varto=\"xitem\"/>\n<xecho var=\"xitem\"/>\n<If>\n<ifcond equals=\"===\" left=\"Stringx\" right=\"\"/>\n</If>\n</xfor>\n</xfunction>",
+        "vardict": {
+            "__name": {
+                "value": [
+                    "__undef__"
+                ],
+                "type": "String"
+            },
+            "mtyArray": {
+                "value": [
+                    {
+                        "value": [
+                            {
+                                "value": [
+                                    "what is 5 + 7"
+                                ],
+                                "type": "String"
+                            },
+                            {
+                                "value": [
+                                    "16"
+                                ],
+                                "type": "String"
+                            },
+                            {
+                                "value": [
+                                    "12"
+                                ],
+                                "type": "String"
+                            },
+                            {
+                                "value": "python:datetime.datetime(2024, 4, 14, 15, 11, 41, 480223, tzinfo=datetime.timezone.utc)",
+                                "type": "datetime"
+                            },
+                            {
+                                "value": [
+                                    "11"
+                                ],
+                                "type": "String"
+                            },
+                            {
+                                "value": [
+                                    "13"
+                                ],
+                                "type": "String"
+                            },
+                            {
+                                "value": [
+                                    "4"
+                                ],
+                                "type": "String"
+                            }
+                        ],
+                        "type": "Array"
+                    },
+                    {
+                        "value": [
+                            {
+                                "value": [
+                                    "what is 11+ 14 +25"
+                                ],
+                                "type": "String"
+                            },
+                            {
+                                "value": [
+                                    "42"
+                                ],
+                                "type": "String"
+                            },
+                            {
+                                "value": "python:datetime.datetime(2024, 4, 14, 15, 11, 41, 482215, tzinfo=datetime.timezone.utc)",
+                                "type": "datetime"
+                            },
+                            {
+                                "value": [
+                                    "50"
+                                ],
+                                "type": "String"
+                            },
+                            {
+                                "value": [
+                                    "32"
+                                ],
+                                "type": "String"
+                            },
+                            {
+                                "value": [
+                                    "45"
+                                ],
+                                "type": "String"
+                            },
+                            {
+                                "value": [
+                                    "2"
+                                ],
+                                "type": "String"
+                            }
+                        ],
+                        "type": "Array"
+                    }
+                ],
+                "type": "Array"
+            },
+            "Stringx": {
+                "value": [
+                    "hello world"
+                ],
+                "type": "String"
+            }
+        }
     },
     "xfuncs": {
         "main": {
@@ -88,73 +640,517 @@
             "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
             "children": [
                 {
-                    "ElementName": "include",
-                    "xmlns": null,
-                    "children": [],
-                    "attrs": {
-                        "src": "stdString.xml",
-                        "as": "String"
-                    },
-                    "striped": [],
-                    "strings": [],
-                    "xml": "<include as=\"String\" src=\"stdString.xml\"/>"
-                },
-                {
-                    "ElementName": "include",
-                    "xmlns": null,
-                    "children": [],
-                    "attrs": {
-                        "src": "stdArray.xml",
-                        "as": "array"
-                    },
-                    "striped": [],
-                    "strings": [],
-                    "xml": "<include as=\"array\" src=\"stdArray.xml\"/>"
-                },
-                {
                     "ElementName": "new",
-                    "xmlns": null,
+                    "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
                     "children": [
                         {
-                            "ElementName": "li",
-                            "xmlns": null,
+                            "ElementName": "new",
+                            "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
                             "children": [
                                 {
                                     "ElementName": "new",
-                                    "xmlns": null,
+                                    "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                                    "children": [
+                                        "what is 5 + 7"
+                                    ],
+                                    "attrs": {
+                                        "type": "String",
+                                        "setas": "xmlns8923"
+                                    },
+                                    "striped": [
+                                        "what is 5 + 7"
+                                    ],
+                                    "strings": [
+                                        "what is 5 + 7"
+                                    ],
+                                    "xml": "<new type=\"String\">what is 5 + 7</new>"
+                                },
+                                {
+                                    "ElementName": "new",
+                                    "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                                    "children": [
+                                        "16"
+                                    ],
+                                    "attrs": {
+                                        "type": "String",
+                                        "setas": "xmlns8923"
+                                    },
+                                    "striped": [
+                                        "16"
+                                    ],
+                                    "strings": [
+                                        "16"
+                                    ],
+                                    "xml": "<new type=\"String\">16</new>"
+                                },
+                                {
+                                    "ElementName": "new",
+                                    "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                                    "children": [
+                                        "12"
+                                    ],
+                                    "attrs": {
+                                        "type": "String",
+                                        "setas": "xmlns8923"
+                                    },
+                                    "striped": [
+                                        "12"
+                                    ],
+                                    "strings": [
+                                        "12"
+                                    ],
+                                    "xml": "<new type=\"String\">12</new>"
+                                },
+                                {
+                                    "ElementName": "new",
+                                    "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
                                     "children": [],
-                                    "attrs": {},
+                                    "attrs": {
+                                        "type": "datetime",
+                                        "setas": "xmlns8923"
+                                    },
                                     "striped": [],
                                     "strings": [],
-                                    "xml": "<new/>"
+                                    "xml": "<new type=\"datetime\"/>"
+                                },
+                                {
+                                    "ElementName": "new",
+                                    "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                                    "children": [
+                                        "11"
+                                    ],
+                                    "attrs": {
+                                        "type": "String",
+                                        "setas": "xmlns8923"
+                                    },
+                                    "striped": [
+                                        "11"
+                                    ],
+                                    "strings": [
+                                        "11"
+                                    ],
+                                    "xml": "<new type=\"String\">11</new>"
+                                },
+                                {
+                                    "ElementName": "new",
+                                    "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                                    "children": [
+                                        "13"
+                                    ],
+                                    "attrs": {
+                                        "type": "String",
+                                        "setas": "xmlns8923"
+                                    },
+                                    "striped": [
+                                        "13"
+                                    ],
+                                    "strings": [
+                                        "13"
+                                    ],
+                                    "xml": "<new type=\"String\">13</new>"
+                                },
+                                {
+                                    "ElementName": "new",
+                                    "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                                    "children": [
+                                        "4"
+                                    ],
+                                    "attrs": {
+                                        "type": "String",
+                                        "setas": "xmlns8923"
+                                    },
+                                    "striped": [
+                                        "4"
+                                    ],
+                                    "strings": [
+                                        "4"
+                                    ],
+                                    "xml": "<new type=\"String\">4</new>"
+                                }
+                            ],
+                            "attrs": {
+                                "type": "Array",
+                                "setas": "xmlns8923"
+                            },
+                            "striped": [
+                                "what is 5 + 7",
+                                "16",
+                                "12",
+                                "11",
+                                "13",
+                                "4"
+                            ],
+                            "strings": [
+                                "\n",
+                                "what is 5 + 7",
+                                "\n",
+                                "16",
+                                "\n",
+                                "12",
+                                "\n",
+                                "\n",
+                                "11",
+                                "\n",
+                                "13",
+                                "\n",
+                                "4",
+                                "\n"
+                            ],
+                            "xml": "<new type=\"Array\">\n<new type=\"String\">what is 5 + 7</new>\n<new type=\"String\">16</new>\n<new type=\"String\">12</new>\n<new type=\"datetime\"/>\n<new type=\"String\">11</new>\n<new type=\"String\">13</new>\n<new type=\"String\">4</new>\n</new>"
+                        },
+                        {
+                            "ElementName": "new",
+                            "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                            "children": [
+                                {
+                                    "ElementName": "new",
+                                    "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                                    "children": [
+                                        "what is 11+ 14 +25"
+                                    ],
+                                    "attrs": {
+                                        "type": "String",
+                                        "setas": "xmlns8923"
+                                    },
+                                    "striped": [
+                                        "what is 11+ 14 +25"
+                                    ],
+                                    "strings": [
+                                        "what is 11+ 14 +25"
+                                    ],
+                                    "xml": "<new type=\"String\">what is 11+ 14 +25</new>"
+                                },
+                                {
+                                    "ElementName": "new",
+                                    "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                                    "children": [
+                                        "42"
+                                    ],
+                                    "attrs": {
+                                        "type": "String",
+                                        "setas": "xmlns8923"
+                                    },
+                                    "striped": [
+                                        "42"
+                                    ],
+                                    "strings": [
+                                        "42"
+                                    ],
+                                    "xml": "<new type=\"String\">42</new>"
+                                },
+                                {
+                                    "ElementName": "new",
+                                    "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                                    "children": [],
+                                    "attrs": {
+                                        "type": "datetime",
+                                        "setas": "xmlns8923"
+                                    },
+                                    "striped": [],
+                                    "strings": [],
+                                    "xml": "<new type=\"datetime\"/>"
+                                },
+                                {
+                                    "ElementName": "new",
+                                    "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                                    "children": [
+                                        "50"
+                                    ],
+                                    "attrs": {
+                                        "type": "String",
+                                        "setas": "xmlns8923"
+                                    },
+                                    "striped": [
+                                        "50"
+                                    ],
+                                    "strings": [
+                                        "50"
+                                    ],
+                                    "xml": "<new type=\"String\">50</new>"
+                                },
+                                {
+                                    "ElementName": "new",
+                                    "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                                    "children": [
+                                        "32"
+                                    ],
+                                    "attrs": {
+                                        "type": "String",
+                                        "setas": "xmlns8923"
+                                    },
+                                    "striped": [
+                                        "32"
+                                    ],
+                                    "strings": [
+                                        "32"
+                                    ],
+                                    "xml": "<new type=\"String\">32</new>"
+                                },
+                                {
+                                    "ElementName": "new",
+                                    "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                                    "children": [
+                                        "45"
+                                    ],
+                                    "attrs": {
+                                        "type": "String",
+                                        "setas": "xmlns8923"
+                                    },
+                                    "striped": [
+                                        "45"
+                                    ],
+                                    "strings": [
+                                        "45"
+                                    ],
+                                    "xml": "<new type=\"String\">45</new>"
+                                },
+                                {
+                                    "ElementName": "new",
+                                    "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                                    "children": [
+                                        "2"
+                                    ],
+                                    "attrs": {
+                                        "type": "String",
+                                        "setas": "xmlns8923"
+                                    },
+                                    "striped": [
+                                        "2"
+                                    ],
+                                    "strings": [
+                                        "2"
+                                    ],
+                                    "xml": "<new type=\"String\">2</new>"
+                                }
+                            ],
+                            "attrs": {
+                                "type": "Array",
+                                "setas": "xmlns8923"
+                            },
+                            "striped": [
+                                "what is 11+ 14 +25",
+                                "42",
+                                "50",
+                                "32",
+                                "45",
+                                "2"
+                            ],
+                            "strings": [
+                                "\n",
+                                "what is 11+ 14 +25",
+                                "\n",
+                                "42",
+                                "\n",
+                                "\n",
+                                "50",
+                                "\n",
+                                "32",
+                                "\n",
+                                "45",
+                                "\n",
+                                "2",
+                                "\n"
+                            ],
+                            "xml": "<new type=\"Array\">\n<new type=\"String\">what is 11+ 14 +25</new>\n<new type=\"String\">42</new>\n<new type=\"datetime\"/>\n<new type=\"String\">50</new>\n<new type=\"String\">32</new>\n<new type=\"String\">45</new>\n<new type=\"String\">2</new>\n</new>"
+                        }
+                    ],
+                    "attrs": {
+                        "setas": "mtyArray",
+                        "type": "Array"
+                    },
+                    "striped": [
+                        "what is 5 + 7",
+                        "16",
+                        "12",
+                        "11",
+                        "13",
+                        "4",
+                        "what is 11+ 14 +25",
+                        "42",
+                        "50",
+                        "32",
+                        "45",
+                        "2"
+                    ],
+                    "strings": [
+                        "\n",
+                        "\n",
+                        "what is 5 + 7",
+                        "\n",
+                        "16",
+                        "\n",
+                        "12",
+                        "\n",
+                        "\n",
+                        "11",
+                        "\n",
+                        "13",
+                        "\n",
+                        "4",
+                        "\n",
+                        "\n",
+                        "\n",
+                        "what is 11+ 14 +25",
+                        "\n",
+                        "42",
+                        "\n",
+                        "\n",
+                        "50",
+                        "\n",
+                        "32",
+                        "\n",
+                        "45",
+                        "\n",
+                        "2",
+                        "\n",
+                        "\n"
+                    ],
+                    "xml": "<new setas=\"mtyArray\" type=\"Array\">\n<new type=\"Array\">\n<new type=\"String\">what is 5 + 7</new>\n<new type=\"String\">16</new>\n<new type=\"String\">12</new>\n<new type=\"datetime\"/>\n<new type=\"String\">11</new>\n<new type=\"String\">13</new>\n<new type=\"String\">4</new>\n</new>\n<new type=\"Array\">\n<new type=\"String\">what is 11+ 14 +25</new>\n<new type=\"String\">42</new>\n<new type=\"datetime\"/>\n<new type=\"String\">50</new>\n<new type=\"String\">32</new>\n<new type=\"String\">45</new>\n<new type=\"String\">2</new>\n</new>\n</new>"
+                },
+                {
+                    "ElementName": "new",
+                    "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                    "children": [
+                        "hello world"
+                    ],
+                    "attrs": {
+                        "setas": "Stringx",
+                        "type": "String"
+                    },
+                    "striped": [
+                        "hello world"
+                    ],
+                    "strings": [
+                        "hello world"
+                    ],
+                    "xml": "<new setas=\"Stringx\" type=\"String\">hello world</new>"
+                },
+                {
+                    "ElementName": "xfor",
+                    "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                    "children": [
+                        {
+                            "ElementName": "select",
+                            "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                            "children": [],
+                            "attrs": {
+                                "varto": "xitem",
+                                "from": "item",
+                                "index": "value"
+                            },
+                            "striped": [],
+                            "strings": [],
+                            "xml": "<select from=\"item\" index=\"value\" varto=\"xitem\"/>"
+                        },
+                        {
+                            "ElementName": "xecho",
+                            "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                            "children": [],
+                            "attrs": {
+                                "var": "xitem"
+                            },
+                            "striped": [],
+                            "strings": [],
+                            "xml": "<xecho var=\"xitem\"/>"
+                        },
+                        {
+                            "ElementName": "If",
+                            "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                            "children": [
+                                {
+                                    "ElementName": "ifcond",
+                                    "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                                    "children": [],
+                                    "attrs": {
+                                        "left": "Stringx",
+                                        "equals": "===",
+                                        "right": ""
+                                    },
+                                    "striped": [],
+                                    "strings": [],
+                                    "xml": "<ifcond equals=\"===\" left=\"Stringx\" right=\"\"/>"
                                 }
                             ],
                             "attrs": {},
                             "striped": [],
                             "strings": [
+                                "\n",
                                 "\n"
                             ],
-                            "xml": "<li><new/>\n</li>"
+                            "xml": "<If>\n<ifcond equals=\"===\" left=\"Stringx\" right=\"\"/>\n</If>"
                         }
                     ],
                     "attrs": {
-                        "type": "Array"
+                        "loopto": "mtyArray",
+                        "var": "item"
                     },
                     "striped": [],
                     "strings": [
                         "\n",
                         "\n",
+                        "\n",
+                        "\n",
+                        "\n",
                         "\n"
                     ],
-                    "xml": "<new type=\"Array\">\n<li><new/>\n</li>\n</new>"
+                    "xml": "<xfor loopto=\"mtyArray\" var=\"item\">\n<select from=\"item\" index=\"value\" varto=\"xitem\"/>\n<xecho var=\"xitem\"/>\n<If>\n<ifcond equals=\"===\" left=\"Stringx\" right=\"\"/>\n</If>\n</xfor>"
                 }
             ],
             "attrs": {
                 "xname": "main",
-                "xmlns:car": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php"
+                "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php"
             },
-            "striped": [],
+            "striped": [
+                "what is 5 + 7",
+                "16",
+                "12",
+                "11",
+                "13",
+                "4",
+                "what is 11+ 14 +25",
+                "42",
+                "50",
+                "32",
+                "45",
+                "2",
+                "hello world"
+            ],
             "strings": [
+                "\n",
+                "\n",
+                "\n",
+                "what is 5 + 7",
+                "\n",
+                "16",
+                "\n",
+                "12",
+                "\n",
+                "\n",
+                "11",
+                "\n",
+                "13",
+                "\n",
+                "4",
+                "\n",
+                "\n",
+                "\n",
+                "what is 11+ 14 +25",
+                "\n",
+                "42",
+                "\n",
+                "\n",
+                "50",
+                "\n",
+                "32",
+                "\n",
+                "45",
+                "\n",
+                "2",
+                "\n",
+                "\n",
+                "\n",
+                "hello world",
+                "\n",
                 "\n",
                 "\n",
                 "\n",
@@ -163,8 +1159,116 @@
                 "\n",
                 "\n"
             ],
-            "xml": "<car:xfunction xmlns:car=\"https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php\" xname=\"main\">\n<include as=\"String\" src=\"stdString.xml\"/>\n<include as=\"array\" src=\"stdArray.xml\"/>\n<new type=\"Array\">\n<li><new/>\n</li>\n</new>\n</car:xfunction>",
-            "vardict": {}
+            "xml": "<xfunction xmlns=\"https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php\" xname=\"main\">\n<new setas=\"mtyArray\" type=\"Array\">\n<new type=\"Array\">\n<new type=\"String\">what is 5 + 7</new>\n<new type=\"String\">16</new>\n<new type=\"String\">12</new>\n<new type=\"datetime\"/>\n<new type=\"String\">11</new>\n<new type=\"String\">13</new>\n<new type=\"String\">4</new>\n</new>\n<new type=\"Array\">\n<new type=\"String\">what is 11+ 14 +25</new>\n<new type=\"String\">42</new>\n<new type=\"datetime\"/>\n<new type=\"String\">50</new>\n<new type=\"String\">32</new>\n<new type=\"String\">45</new>\n<new type=\"String\">2</new>\n</new>\n</new>\n<new setas=\"Stringx\" type=\"String\">hello world</new>\n<xfor loopto=\"mtyArray\" var=\"item\">\n<select from=\"item\" index=\"value\" varto=\"xitem\"/>\n<xecho var=\"xitem\"/>\n<If>\n<ifcond equals=\"===\" left=\"Stringx\" right=\"\"/>\n</If>\n</xfor>\n</xfunction>",
+            "vardict": {
+                "__name": {
+                    "value": [
+                        "__undef__"
+                    ],
+                    "type": "String"
+                },
+                "mtyArray": {
+                    "value": [
+                        {
+                            "value": [
+                                {
+                                    "value": [
+                                        "what is 5 + 7"
+                                    ],
+                                    "type": "String"
+                                },
+                                {
+                                    "value": [
+                                        "16"
+                                    ],
+                                    "type": "String"
+                                },
+                                {
+                                    "value": [
+                                        "12"
+                                    ],
+                                    "type": "String"
+                                },
+                                {
+                                    "value": "python:datetime.datetime(2024, 4, 14, 15, 11, 41, 480223, tzinfo=datetime.timezone.utc)",
+                                    "type": "datetime"
+                                },
+                                {
+                                    "value": [
+                                        "11"
+                                    ],
+                                    "type": "String"
+                                },
+                                {
+                                    "value": [
+                                        "13"
+                                    ],
+                                    "type": "String"
+                                },
+                                {
+                                    "value": [
+                                        "4"
+                                    ],
+                                    "type": "String"
+                                }
+                            ],
+                            "type": "Array"
+                        },
+                        {
+                            "value": [
+                                {
+                                    "value": [
+                                        "what is 11+ 14 +25"
+                                    ],
+                                    "type": "String"
+                                },
+                                {
+                                    "value": [
+                                        "42"
+                                    ],
+                                    "type": "String"
+                                },
+                                {
+                                    "value": "python:datetime.datetime(2024, 4, 14, 15, 11, 41, 482215, tzinfo=datetime.timezone.utc)",
+                                    "type": "datetime"
+                                },
+                                {
+                                    "value": [
+                                        "50"
+                                    ],
+                                    "type": "String"
+                                },
+                                {
+                                    "value": [
+                                        "32"
+                                    ],
+                                    "type": "String"
+                                },
+                                {
+                                    "value": [
+                                        "45"
+                                    ],
+                                    "type": "String"
+                                },
+                                {
+                                    "value": [
+                                        "2"
+                                    ],
+                                    "type": "String"
+                                }
+                            ],
+                            "type": "Array"
+                        }
+                    ],
+                    "type": "Array"
+                },
+                "Stringx": {
+                    "value": [
+                        "hello world"
+                    ],
+                    "type": "String"
+                }
+            }
         }
     }
 }
