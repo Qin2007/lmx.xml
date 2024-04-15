@@ -4,7 +4,6 @@ import datetime
 import tempfile
 import time
 import types
-from pprint import pprint
 
 import toml
 import bs4
@@ -53,14 +52,17 @@ class XScripter:
             'out.txt': 'out.txt',
             'dump.json': 'dump.json',
             'cwd': pathlib.Path.cwd(),
-            '__name': '__undef__'}
+            '__name': '__undef__',
+            'printconsole': True}
         self.__parsedata = None
         self.__xmlns = "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php"
         self._ismain = False
         self.__modules = dict()
         with open(docsfile, 'rt', encoding='utf-8') as tomlfile:
             self.__helpstmt = toml.loads(tomlfile.read())['help']
-        self.__undef = dict(value='__undef', type='__undef')
+        self.___undef = '__undef'
+        self.__undef = dict(value=[self.___undef], type=self.___undef)
+        self.__openfor_run = True
 
     @property
     def scriptf(self):
@@ -81,11 +83,12 @@ class XScripter:
                 set_as = list()
 
                 for i in value:
-                    # match i['type']:
-                    #     case'Array':
-                    i['attrs']['setas'] = 'xmlns8923'
-                    self._createnew(i, dix := dict())
-                    set_as.append(dix['xmlns8923'])
+                    if i['type'] == 'xml':
+                        i['attrs']['setas'] = 'xmlns8923'
+                        self._createnew(i, dix := dict())
+                        set_as.append(dix['xmlns8923'])
+                    else:
+                        set_as.append(i)
                 value_as = set_as
             case 'Object':
                 value_as = value
@@ -111,7 +114,7 @@ class XScripter:
             obj = {'ElementName': element.name, 'xmlns': element.namespace,
                    'children': [xml_element_to_obj(child) for child in element.children],
                    'attrs': {attr: value for attr, value in element.attrs.items()},
-                   'striped': [i for i in element.stripped_strings],
+                   'striped': [i for i in element.stripped_strings], 'type': 'xml',
                    'strings': [i for i in element.strings], 'xml': repr(element)}
             obj['children'] = [i for i in obj['children'] if i is not None and not (i == '\n' or i == ' ')]
             return obj
@@ -124,35 +127,16 @@ class XScripter:
             exl['strings'] if exl['attrs']['type'] == 'String' else exl['children'],
             exl['attrs']['type'],
             vardict)
-        pass
-        # def matchii(ii):
-        #     return ii['ElementName'] in ('new',) and ii['xmlns'] == self.xmlns
-        #
-        # match (mtype := exl['attrs']['type']):
-        #     case 'datetime':
-        #         set_as = utcnow()
-        #     case 'String':
-        #         set_as = exl['attrs']['value']
-        #     case 'char':
-        #         set_as = exl['attrs']['value'][0]
-        #     case 'Array':
-        #         set_as = list()
-        #         for i in [i for i in exl['children'] if matchii(i)]:
-        #             match (i['ElementName']):
-        #                 case 'new':
-        #                     i['attrs']['setas'] = 'xmlns8923'
-        #                     self._createnew(i, dix := dict())
-        #                     set_as.append(dix['xmlns8923'])
-        #                 case 'li':
-        #                     ...
-        #                 case _:
-        #                     ...
-        #         set_as = set_as
-        #     case _:
-        #         raise ValueError('unsupported type ' + f"{exl['attrs']['type']}")
-        # if set_as is not None:
-        #     vardict[exl['attrs']['setas']] = dict(value=set_as, type=mtype)
         return
+
+    @staticmethod
+    def _to_string_from_object(object_, type_=None):
+        return (
+            ''.join(object_) if type_ == 'String' else object_
+        ) if type_ is not None else (
+            ''.join(object_['value']) if object_['type'] == 'String'
+            else object_['value'])
+        pass
 
     def _to_string(self, property_: dict, fromself=False):
         value = property_['value']
@@ -181,31 +165,47 @@ class XScripter:
             attrs = ifcond['attrs']
             match ifcond['ElementName'].lower():
                 case 'ifcond':
-                    if bool(setleftas := attrs.get('setleftas')):
+                    setleftas = attrs.get('setleftas')
+                    rightvar = attrs.get('right')
+                    if (setleftas and rightvar) and (setleftas == rightvar):
+                        raise XMLEqualsWarning('setleftas="" and right="" are equal this can lead to weird behavior')
+                    if setleftas:
                         left = input('left>>>')
                         # vardict[setleftas] = left
                         self._edit_vardict(setleftas, left, 'String', vardict)
-                        left = dict(value=left, type='String')
+                        left = dict(value=[left], type='String')
                     else:
-                        left = vardict.get(attrs.get('left'), self.__undef)
-                    if attrs.get('right'):
-                        right = vardict.get(attrs['right'], self.__undef)
+                        left = vardict.get(attrs.get('left'), self.__undef['value'])
+                    if rightvar:
+                        right = vardict.get(attrs['right'], self.__undef['value'])
                     else:
                         right = dict(value=attrs.get('rightStr', '__undef'), type='String')
+
                     match attrs.get('equals', '__undef'):
                         case '==':
                             raise NotImplementedError
                         case '===':
                             ifcond_true = ifcond_true or (
-                                (left['type'] == right['type'] and left['value'] == right['value'])
+                                (left['type'] == right['type'] and (
+                                        self._to_string_from_object(left['value'], left['type']) ==
+                                        self._to_string_from_object(right['value'], right['type'])))
                             )
                             pass
                     pass
                 case 'ifbody':
+                    if ifcond_true:
+                        for exlc in ifcond['children']:
+                            self._exec(exlc, printer, vardict, xfunction)
+                        break
+                case 'elsebody':
                     for exlc in ifcond['children']:
                         self._exec(exlc, printer, vardict, xfunction)
                     break
         return
+
+    @staticmethod
+    def _mkvar(name, value, type_, vardict):
+        vardict[name] = dict(value=value, type=type_)
 
     def _exec(self, exl, printer, vardict, xfunction):
         if exl['xmlns'] != self.xmlns:
@@ -221,9 +221,19 @@ class XScripter:
                     raise XKeyExrror('xecho has not a var="" set or that variable is not in the localscope') from None
             case 'select':
                 dictvar = vardict[exl['attrs']['from']]
-                self._edit_vardict(
+                xhr = (inx if (inx := exl['attrs'].get('index', False))
+                       else vardict.get(exl['attrs'].get('indexvar', '__undef'),
+                                        self.__undef)['value'][0])
+                item = dictvar['value'][int(xhr)]
+                pass
+                # self._edit_vardict(
+                #     exl['attrs']['varto'],
+                #     dictvar['value'][int(exl['attrs']['index'])],
+                #     dictvar['type'], vardict)
+                self._mkvar(
                     exl['attrs']['varto'],
-                    dictvar['value'][exl['attrs']['index']], dictvar['type'],
+                    item['value'],
+                    item['type'],
                     vardict)
                 pass
             case 'xcall':
@@ -234,7 +244,10 @@ class XScripter:
                 if bool(var := exl['attrs'].get('loopto')):
                     rgnx = vardict[var]['value']
                 else:
-                    rgnx = range(int(exl['attrs']['start']), int(exl['attrs']['stop']), int(exl['attrs']['step']))
+                    rgnx = range(
+                        int(exl['attrs']['start']),
+                        int(exl['attrs']['stop']),
+                        int(exl['attrs'].get('step', 1)))
                     rgnx = (dict(value=[f'{i}'], type='String') for i in rgnx)
                 for var in rgnx:
                     self._edit_vardict(exl['attrs']['var'], var['value'], var['type'], vardict)
@@ -278,6 +291,9 @@ class XScripter:
                         raise ValueError(f'{importas}.{xname} exxists already')
                     self._xfunctions[f"{importas}.{xname}"] = xfunc
                 pass
+            case 'xall':
+                for xtag, helpstr in self.__helpstmt.items():
+                    printer.out(f'<{xtag}>\n{helpstr}\n\n')
             case _:
                 print(xmlname, 'is not a supported element, if this is intentional',
                       'please add it to an xignel element to suppress this warning')
@@ -325,13 +341,16 @@ class XScripter:
         return rtrn
 
     def xmlrun(self, *, return_=False, suppress=False):
+        if not self.__openfor_run:
+            raise Exception('ude a new XScripter')
+        self.__openfor_run = False
         startdate = httpdate(started_at := utcnow())
         if not suppress:
             print('\nhello at', startdate)
         start_time = time.perf_counter()
         with (open(self.conf['out.txt'], 'wt', encoding='utf-8') as outfile,
               open(self.conf['dump.json'], 'wt', encoding='utf-8') as jdump):
-            printer, jdump = Printer(outfile, False), Printer(jdump)
+            printer, jdump = Printer(outfile, self.conf['printconsole']), Printer(jdump)
             printer.out(httpdate(started_at)).out('\n').out('\n')
             try:
                 self.conf['__name'] = self.conf.get('__name', '__main__')

@@ -9,7 +9,11 @@ class XKeyExrror(BaseXMLException, KeyError):
     pass
 
 
-class XMLNotImplementedError:
+class XMLNotImplementedError(BaseXMLException):
+    pass
+
+
+class XMLEqualsWarning(BaseXMLException):
     pass
 
 

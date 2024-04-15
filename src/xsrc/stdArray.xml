@@ -1,3 +1,44 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <car:xfunction xmlns:car="https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php" xname="main">
+    <new setas="mtyArray" type="Array">
+        <new type="Array">
+            <new type="String">what is 5 + 7</new>
+            <new type="String">16</new>
+            <new type="String">12</new>
+            <new type="String">11</new>
+            <new type="String">13</new>
+            <new type="String">4</new>
+        </new>
+        <new type="Array">
+            <new type="String">what is 11+ 14 +25</new>
+            <new type="String">42</new>
+            <new type="String">50</new>
+            <new type="String">32</new>
+            <new type="String">45</new>
+            <new type="String">2</new>
+        </new>
+    </new>
+    <xfor loopto="mtyArray" var="item">
+        <select varto="question" from="item" index="0"/>
+        <xecho var="question"/>
+        <xfor var="index" start="1" step="1" stop="5">
+            <select varto="questionA" from="item" indexvar="index"/>
+            <xecho var="questionA"/>
+        </xfor>
+        <select varto="answer" from="item" index="5"/>
+        <If>
+            <ifcond setleftas="answerl" equals="===" right="answer"/>
+            <ifbody>
+                <xout>True</xout>
+            </ifbody>
+            <ifcond left="answerl" equals="===" rightStr="xml"/>
+            <ifbody>
+                <xout>XTrue</xout>
+            </ifbody>
+            <elsebody>
+                <xout>Fslse</xout>
+
+            </elsebody>
+        </If>
+    </xfor>
 </car:xfunction>

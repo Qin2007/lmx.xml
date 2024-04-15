@@ -71,8 +71,19 @@ equals="" the operator, oneof
 
 setleftas="" is mutally exclusive to left and asks user for input, this value can be compared to right="", setleft as is prioritized
 rightstr="" right as a string, right is prioritized'''
+ifbody='''
+when an if body is reached in an <if> tag, all ifconds have given a boolean value
+if that is True then the xmltags are evaluated here, else this one is skiped.
+
+note ifconds after an ifbody are treated as an elseif in most languages'''
+elsebody='''
+an elsebody MUST be the last tag in an <if> tag as every tag afterwards is skiped.
+this is how else tags work'''
 
 toString = '''transforms any variable to a string
 var="the var to replace"'''
+xall='print all, helps to the output'
+autofill='fills all values, range(-5, 256)'
+
 
 END=''

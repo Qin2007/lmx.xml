@@ -1,31 +1,69 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<xfunction xmlns="https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php" xname="main">
-    <new setas="mtyArray" type="Array">
-        <new type="Array">
-            <new type="String">what is 5 + 7</new>
-            <new type="String">16</new>
-            <new type="String">12</new>
-            <new type="datetime"/>
-            <new type="String">11</new>
-            <new type="String">13</new>
-            <new type="String">4</new>
-        </new>
-        <new type="Array">
-            <new type="String">what is 11+ 14 +25</new>
-            <new type="String">42</new>
-            <new type="datetime"/>
-            <new type="String">50</new>
-            <new type="String">32</new>
-            <new type="String">45</new>
-            <new type="String">2</new>
-        </new>
-    </new>
-    <new setas="Stringx" type="String">hello world</new>
-    <xfor loopto="mtyArray" var="item">
-        <select varto="xitem" from="item" index="value"/>
-        <xecho var="xitem"/>
-        <If>
-            <ifcond left="Stringx" equals="===" right=""/><!--setleftas="answer"-->
-        </If>
-    </xfor>
+<xfunction xmlns="https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php" xname="main" printconsole="True">
+    <autofill/>
+    <if>
+        <ifcond setleftas="left" equals="===" right="-2"/>
+        <ifbody>
+            <xout>-2</xout>
+        </ifbody>
+        <ifcond left="left" equals="===" right="-1"/>
+        <ifbody>
+            <xout>-1</xout>
+        </ifbody>
+        <ifcond left="left" equals="===" right="0"/>
+        <ifbody>
+            <xout>0</xout>
+        </ifbody>
+        <ifcond left="left" equals="===" right="1"/>
+        <ifbody>
+            <xout>1</xout>
+        </ifbody>
+        <ifcond left="left" equals="===" right="2"/>
+        <ifbody>
+            <xout>2</xout>
+        </ifbody>
+        <ifcond left="left" equals="===" right="3"/>
+        <ifbody>
+            <xout>3</xout>
+        </ifbody>
+        <ifcond left="left" equals="===" right="4"/>
+        <ifbody>
+            <xout>4</xout>
+        </ifbody>
+        <ifcond left="left" equals="===" right="5"/>
+        <ifbody>
+            <xout>5</xout>
+        </ifbody>
+        <ifcond left="left" equals="===" right="6"/>
+        <ifbody>
+            <xout>6</xout>
+        </ifbody>
+        <ifcond left="left" equals="===" right="7"/>
+        <ifbody>
+            <xout>7</xout>
+        </ifbody>
+        <ifcond left="left" equals="===" right="8"/>
+        <ifbody>
+            <xout>8</xout>
+        </ifbody>
+        <ifcond left="left" equals="===" right="9"/>
+        <ifbody>
+            <xout>9</xout>
+        </ifbody>
+        <ifcond left="left" equals="===" right="10"/>
+        <ifbody>
+            <xout>10</xout>
+        </ifbody>
+        <ifcond left="left" equals="===" right="11"/>
+        <ifbody>
+            <xout>11</xout>
+        </ifbody>
+        <ifcond left="left" equals="===" right="12"/>
+        <ifbody>
+            <xout>12</xout>
+        </ifbody>
+        <elsebody>
+            <xout>what?</xout>
+        </elsebody>
+    </if>
 </xfunction>
