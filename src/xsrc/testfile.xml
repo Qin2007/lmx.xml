@@ -1,69 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<xfunction xmlns="https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php" xname="main" printconsole="True">
-    <autofill/>
+<xfunction xmlns="https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php" xname="main">
+    <xecho var="__name"/>
+    <include src="require.xml" as="requore"/>
+    <xfunction xname="xfor">
+        <xfor start="0" stop="15" var="var">
+            <xecho var="var"/>
+        </xfor>
+    </xfunction>
     <if>
-        <ifcond setleftas="left" equals="===" right="-2"/>
-        <ifbody>
-            <xout>-2</xout>
-        </ifbody>
-        <ifcond left="left" equals="===" right="-1"/>
-        <ifbody>
-            <xout>-1</xout>
-        </ifbody>
-        <ifcond left="left" equals="===" right="0"/>
-        <ifbody>
-            <xout>0</xout>
-        </ifbody>
-        <ifcond left="left" equals="===" right="1"/>
-        <ifbody>
-            <xout>1</xout>
-        </ifbody>
-        <ifcond left="left" equals="===" right="2"/>
-        <ifbody>
-            <xout>2</xout>
-        </ifbody>
-        <ifcond left="left" equals="===" right="3"/>
-        <ifbody>
-            <xout>3</xout>
-        </ifbody>
-        <ifcond left="left" equals="===" right="4"/>
-        <ifbody>
-            <xout>4</xout>
-        </ifbody>
-        <ifcond left="left" equals="===" right="5"/>
-        <ifbody>
-            <xout>5</xout>
-        </ifbody>
-        <ifcond left="left" equals="===" right="6"/>
-        <ifbody>
-            <xout>6</xout>
-        </ifbody>
-        <ifcond left="left" equals="===" right="7"/>
-        <ifbody>
-            <xout>7</xout>
-        </ifbody>
-        <ifcond left="left" equals="===" right="8"/>
-        <ifbody>
-            <xout>8</xout>
-        </ifbody>
-        <ifcond left="left" equals="===" right="9"/>
-        <ifbody>
-            <xout>9</xout>
-        </ifbody>
-        <ifcond left="left" equals="===" right="10"/>
-        <ifbody>
-            <xout>10</xout>
-        </ifbody>
-        <ifcond left="left" equals="===" right="11"/>
-        <ifbody>
-            <xout>11</xout>
-        </ifbody>
-        <ifcond left="left" equals="===" right="12"/>
-        <ifbody>
-            <xout>12</xout>
-        </ifbody>
-        <elsebody>
-            <xout>what?</xout>
-        </elsebody>
+        <ifcond left="__name" rightStr="__main__">
+            <xfor start="0" stop="15" var="var">
+                <xcall xname="xfor"/>
+            </xfor>
+        </ifcond>
     </if>
 </xfunction>

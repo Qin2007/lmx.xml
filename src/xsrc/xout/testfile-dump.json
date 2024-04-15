@@ -1,0 +1,408 @@
+{
+    "xml": {
+        "ElementName": "xfunction",
+        "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+        "children": [
+            {
+                "ElementName": "xecho",
+                "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                "children": [],
+                "attrs": {
+                    "var": "__name"
+                },
+                "striped": [],
+                "type": "xml",
+                "strings": [],
+                "xml": "<xecho var=\"__name\"/>"
+            },
+            {
+                "ElementName": "include",
+                "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                "children": [],
+                "attrs": {
+                    "src": "require.xml",
+                    "as": "requore"
+                },
+                "striped": [],
+                "type": "xml",
+                "strings": [],
+                "xml": "<include as=\"requore\" src=\"require.xml\"/>"
+            },
+            {
+                "ElementName": "xfunction",
+                "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                "children": [
+                    {
+                        "ElementName": "xfor",
+                        "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                        "children": [
+                            {
+                                "ElementName": "xecho",
+                                "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                                "children": [],
+                                "attrs": {
+                                    "var": "var"
+                                },
+                                "striped": [],
+                                "type": "xml",
+                                "strings": [],
+                                "xml": "<xecho var=\"var\"/>"
+                            }
+                        ],
+                        "attrs": {
+                            "start": "0",
+                            "stop": "15",
+                            "var": "var"
+                        },
+                        "striped": [],
+                        "type": "xml",
+                        "strings": [
+                            "\n",
+                            "\n"
+                        ],
+                        "xml": "<xfor start=\"0\" stop=\"15\" var=\"var\">\n<xecho var=\"var\"/>\n</xfor>"
+                    }
+                ],
+                "attrs": {
+                    "xname": "xfor"
+                },
+                "striped": [],
+                "type": "xml",
+                "strings": [
+                    "\n",
+                    "\n",
+                    "\n",
+                    "\n"
+                ],
+                "xml": "<xfunction xname=\"xfor\">\n<xfor start=\"0\" stop=\"15\" var=\"var\">\n<xecho var=\"var\"/>\n</xfor>\n</xfunction>"
+            },
+            {
+                "ElementName": "if",
+                "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                "children": [
+                    {
+                        "ElementName": "ifcond",
+                        "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                        "children": [
+                            {
+                                "ElementName": "xfor",
+                                "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                                "children": [
+                                    {
+                                        "ElementName": "xcall",
+                                        "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                                        "children": [],
+                                        "attrs": {
+                                            "xname": "xfor"
+                                        },
+                                        "striped": [],
+                                        "type": "xml",
+                                        "strings": [],
+                                        "xml": "<xcall xname=\"xfor\"/>"
+                                    }
+                                ],
+                                "attrs": {
+                                    "start": "0",
+                                    "stop": "15",
+                                    "var": "var"
+                                },
+                                "striped": [],
+                                "type": "xml",
+                                "strings": [
+                                    "\n",
+                                    "\n"
+                                ],
+                                "xml": "<xfor start=\"0\" stop=\"15\" var=\"var\">\n<xcall xname=\"xfor\"/>\n</xfor>"
+                            }
+                        ],
+                        "attrs": {
+                            "left": "__name",
+                            "rightStr": "__main__"
+                        },
+                        "striped": [],
+                        "type": "xml",
+                        "strings": [
+                            "\n",
+                            "\n",
+                            "\n",
+                            "\n"
+                        ],
+                        "xml": "<ifcond left=\"__name\" rightStr=\"__main__\">\n<xfor start=\"0\" stop=\"15\" var=\"var\">\n<xcall xname=\"xfor\"/>\n</xfor>\n</ifcond>"
+                    }
+                ],
+                "attrs": {},
+                "striped": [],
+                "type": "xml",
+                "strings": [
+                    "\n",
+                    "\n",
+                    "\n",
+                    "\n",
+                    "\n",
+                    "\n"
+                ],
+                "xml": "<if>\n<ifcond left=\"__name\" rightStr=\"__main__\">\n<xfor start=\"0\" stop=\"15\" var=\"var\">\n<xcall xname=\"xfor\"/>\n</xfor>\n</ifcond>\n</if>"
+            }
+        ],
+        "attrs": {
+            "xname": "main",
+            "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php"
+        },
+        "striped": [],
+        "type": "xml",
+        "strings": [
+            "\n",
+            "\n",
+            "\n",
+            "\n",
+            "\n",
+            "\n",
+            "\n",
+            "\n",
+            "\n",
+            "\n",
+            "\n",
+            "\n",
+            "\n",
+            "\n",
+            "\n"
+        ],
+        "xml": "<xfunction xmlns=\"https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php\" xname=\"main\">\n<xecho var=\"__name\"/>\n<include as=\"requore\" src=\"require.xml\"/>\n<xfunction xname=\"xfor\">\n<xfor start=\"0\" stop=\"15\" var=\"var\">\n<xecho var=\"var\"/>\n</xfor>\n</xfunction>\n<if>\n<ifcond left=\"__name\" rightStr=\"__main__\">\n<xfor start=\"0\" stop=\"15\" var=\"var\">\n<xcall xname=\"xfor\"/>\n</xfor>\n</ifcond>\n</if>\n</xfunction>",
+        "vardict": {
+            "__name": {
+                "value": [
+                    "__main__"
+                ],
+                "type": "String"
+            }
+        }
+    },
+    "xfuncs": {
+        "main": {
+            "ElementName": "xfunction",
+            "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+            "children": [
+                {
+                    "ElementName": "xecho",
+                    "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                    "children": [],
+                    "attrs": {
+                        "var": "__name"
+                    },
+                    "striped": [],
+                    "type": "xml",
+                    "strings": [],
+                    "xml": "<xecho var=\"__name\"/>"
+                },
+                {
+                    "ElementName": "include",
+                    "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                    "children": [],
+                    "attrs": {
+                        "src": "require.xml",
+                        "as": "requore"
+                    },
+                    "striped": [],
+                    "type": "xml",
+                    "strings": [],
+                    "xml": "<include as=\"requore\" src=\"require.xml\"/>"
+                },
+                {
+                    "ElementName": "xfunction",
+                    "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                    "children": [
+                        {
+                            "ElementName": "xfor",
+                            "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                            "children": [
+                                {
+                                    "ElementName": "xecho",
+                                    "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                                    "children": [],
+                                    "attrs": {
+                                        "var": "var"
+                                    },
+                                    "striped": [],
+                                    "type": "xml",
+                                    "strings": [],
+                                    "xml": "<xecho var=\"var\"/>"
+                                }
+                            ],
+                            "attrs": {
+                                "start": "0",
+                                "stop": "15",
+                                "var": "var"
+                            },
+                            "striped": [],
+                            "type": "xml",
+                            "strings": [
+                                "\n",
+                                "\n"
+                            ],
+                            "xml": "<xfor start=\"0\" stop=\"15\" var=\"var\">\n<xecho var=\"var\"/>\n</xfor>"
+                        }
+                    ],
+                    "attrs": {
+                        "xname": "xfor"
+                    },
+                    "striped": [],
+                    "type": "xml",
+                    "strings": [
+                        "\n",
+                        "\n",
+                        "\n",
+                        "\n"
+                    ],
+                    "xml": "<xfunction xname=\"xfor\">\n<xfor start=\"0\" stop=\"15\" var=\"var\">\n<xecho var=\"var\"/>\n</xfor>\n</xfunction>"
+                },
+                {
+                    "ElementName": "if",
+                    "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                    "children": [
+                        {
+                            "ElementName": "ifcond",
+                            "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                            "children": [
+                                {
+                                    "ElementName": "xfor",
+                                    "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                                    "children": [
+                                        {
+                                            "ElementName": "xcall",
+                                            "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                                            "children": [],
+                                            "attrs": {
+                                                "xname": "xfor"
+                                            },
+                                            "striped": [],
+                                            "type": "xml",
+                                            "strings": [],
+                                            "xml": "<xcall xname=\"xfor\"/>"
+                                        }
+                                    ],
+                                    "attrs": {
+                                        "start": "0",
+                                        "stop": "15",
+                                        "var": "var"
+                                    },
+                                    "striped": [],
+                                    "type": "xml",
+                                    "strings": [
+                                        "\n",
+                                        "\n"
+                                    ],
+                                    "xml": "<xfor start=\"0\" stop=\"15\" var=\"var\">\n<xcall xname=\"xfor\"/>\n</xfor>"
+                                }
+                            ],
+                            "attrs": {
+                                "left": "__name",
+                                "rightStr": "__main__"
+                            },
+                            "striped": [],
+                            "type": "xml",
+                            "strings": [
+                                "\n",
+                                "\n",
+                                "\n",
+                                "\n"
+                            ],
+                            "xml": "<ifcond left=\"__name\" rightStr=\"__main__\">\n<xfor start=\"0\" stop=\"15\" var=\"var\">\n<xcall xname=\"xfor\"/>\n</xfor>\n</ifcond>"
+                        }
+                    ],
+                    "attrs": {},
+                    "striped": [],
+                    "type": "xml",
+                    "strings": [
+                        "\n",
+                        "\n",
+                        "\n",
+                        "\n",
+                        "\n",
+                        "\n"
+                    ],
+                    "xml": "<if>\n<ifcond left=\"__name\" rightStr=\"__main__\">\n<xfor start=\"0\" stop=\"15\" var=\"var\">\n<xcall xname=\"xfor\"/>\n</xfor>\n</ifcond>\n</if>"
+                }
+            ],
+            "attrs": {
+                "xname": "main",
+                "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php"
+            },
+            "striped": [],
+            "type": "xml",
+            "strings": [
+                "\n",
+                "\n",
+                "\n",
+                "\n",
+                "\n",
+                "\n",
+                "\n",
+                "\n",
+                "\n",
+                "\n",
+                "\n",
+                "\n",
+                "\n",
+                "\n",
+                "\n"
+            ],
+            "xml": "<xfunction xmlns=\"https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php\" xname=\"main\">\n<xecho var=\"__name\"/>\n<include as=\"requore\" src=\"require.xml\"/>\n<xfunction xname=\"xfor\">\n<xfor start=\"0\" stop=\"15\" var=\"var\">\n<xecho var=\"var\"/>\n</xfor>\n</xfunction>\n<if>\n<ifcond left=\"__name\" rightStr=\"__main__\">\n<xfor start=\"0\" stop=\"15\" var=\"var\">\n<xcall xname=\"xfor\"/>\n</xfor>\n</ifcond>\n</if>\n</xfunction>",
+            "vardict": {
+                "__name": {
+                    "value": [
+                        "__main__"
+                    ],
+                    "type": "String"
+                }
+            }
+        },
+        "xfor": {
+            "ElementName": "xfunction",
+            "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+            "children": [
+                {
+                    "ElementName": "xfor",
+                    "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                    "children": [
+                        {
+                            "ElementName": "xecho",
+                            "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                            "children": [],
+                            "attrs": {
+                                "var": "var"
+                            },
+                            "striped": [],
+                            "type": "xml",
+                            "strings": [],
+                            "xml": "<xecho var=\"var\"/>"
+                        }
+                    ],
+                    "attrs": {
+                        "start": "0",
+                        "stop": "15",
+                        "var": "var"
+                    },
+                    "striped": [],
+                    "type": "xml",
+                    "strings": [
+                        "\n",
+                        "\n"
+                    ],
+                    "xml": "<xfor start=\"0\" stop=\"15\" var=\"var\">\n<xecho var=\"var\"/>\n</xfor>"
+                }
+            ],
+            "attrs": {
+                "xname": "xfor"
+            },
+            "striped": [],
+            "type": "xml",
+            "strings": [
+                "\n",
+                "\n",
+                "\n",
+                "\n"
+            ],
+            "xml": "<xfunction xname=\"xfor\">\n<xfor start=\"0\" stop=\"15\" var=\"var\">\n<xecho var=\"var\"/>\n</xfor>\n</xfunction>"
+        }
+    }
+}

@@ -1,0 +1,78 @@
+{
+    "xml": {
+        "ElementName": "xfunction",
+        "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+        "children": [
+            {
+                "ElementName": "xecho",
+                "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                "children": [],
+                "attrs": {
+                    "var": "__name"
+                },
+                "striped": [],
+                "type": "xml",
+                "strings": [],
+                "xml": "<xecho var=\"__name\"/>"
+            }
+        ],
+        "attrs": {
+            "xname": "main",
+            "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php"
+        },
+        "striped": [],
+        "type": "xml",
+        "strings": [
+            "\n",
+            "\n"
+        ],
+        "xml": "<xfunction xmlns=\"https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php\" xname=\"main\">\n<xecho var=\"__name\"/>\n</xfunction>",
+        "vardict": {
+            "__name": {
+                "value": [
+                    "require.xml"
+                ],
+                "type": "String"
+            }
+        }
+    },
+    "xfuncs": {
+        "main": {
+            "ElementName": "xfunction",
+            "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+            "children": [
+                {
+                    "ElementName": "xecho",
+                    "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php",
+                    "children": [],
+                    "attrs": {
+                        "var": "__name"
+                    },
+                    "striped": [],
+                    "type": "xml",
+                    "strings": [],
+                    "xml": "<xecho var=\"__name\"/>"
+                }
+            ],
+            "attrs": {
+                "xname": "main",
+                "xmlns": "https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php"
+            },
+            "striped": [],
+            "type": "xml",
+            "strings": [
+                "\n",
+                "\n"
+            ],
+            "xml": "<xfunction xmlns=\"https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php\" xname=\"main\">\n<xecho var=\"__name\"/>\n</xfunction>",
+            "vardict": {
+                "__name": {
+                    "value": [
+                        "require.xml"
+                    ],
+                    "type": "String"
+                }
+            }
+        }
+    }
+}

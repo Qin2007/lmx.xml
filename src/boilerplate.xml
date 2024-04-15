@@ -1,2 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<car:xfunction xmlns:car="https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php" xname="main"> </car:xfunction>
+<car:xfunction xmlns:car="https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php" xname="main">
+    <car:if>
+        <car:ifcond left="__name" rightStr="__main__">
+            <!-- code here/ -->
+        </car:ifcond>
+    </car:if>
+</car:xfunction>

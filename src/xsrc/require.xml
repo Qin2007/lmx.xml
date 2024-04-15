@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xfunction xmlns="https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php" xname="main">
+    <xecho var="__name"/>
+</xfunction>

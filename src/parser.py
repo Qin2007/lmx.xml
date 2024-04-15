@@ -4,6 +4,7 @@ import datetime
 import tempfile
 import time
 import types
+from pprint import pprint
 
 import toml
 import bs4
@@ -179,8 +180,7 @@ class XScripter:
                     if rightvar:
                         right = vardict.get(attrs['right'], self.__undef['value'])
                     else:
-                        right = dict(value=attrs.get('rightStr', '__undef'), type='String')
-
+                        right = dict(value=[attrs.get('rightStr', '__undef')], type='String')
                     match attrs.get('equals', '__undef'):
                         case '==':
                             raise NotImplementedError
@@ -353,7 +353,11 @@ class XScripter:
             printer, jdump = Printer(outfile, self.conf['printconsole']), Printer(jdump)
             printer.out(httpdate(started_at)).out('\n').out('\n')
             try:
-                self.conf['__name'] = self.conf.get('__name', '__main__')
+                self.conf['__name'] = \
+                    (__name if
+                     (__name := self.conf.get(
+                         '__name', '__undef__'))
+                     != '__undef__' else '__main__')
                 self._xmlstart(self.__parsedata, printer=printer, toplvl=True)
                 if self._ismain:
                     self._callfunc('main', printer)
