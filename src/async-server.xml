@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<car:xfunction xmlns:car="https://ant.ractoc.com/xmlns/lmx/0/0/0/index.php" xname="main"
+               xmlns:aiohttp="https://ant.ractoc.com/xmlns/aiohttp/0/0/0/index.php" async="">
+    <car:xfunction xname="/">
+        <aiohttp:xout>hello world</aiohttp:xout>
+    </car:xfunction>
+    <aiohttp:addroute route="/" xname="/"/>
+    <car:if>
+        <car:ifcond left="__name" rightStr="__main__">
+            <aiohttp:run server="my server"/>
+        </car:ifcond>
+    </car:if>
+</car:xfunction>

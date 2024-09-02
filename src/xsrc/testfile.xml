@@ -7,8 +7,7 @@
             <xecho var="var"/>
         </xfor>
     </xfunction>
-    <if>
-        <ifcond left="__name" rightStr="__main__">
+    <if><ifcond left="__name" rightStr="__main__">
             <xfor start="0" stop="15" var="var">
                 <xcall xname="xfor"/>
             </xfor>

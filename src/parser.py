@@ -9,40 +9,9 @@ from pprint import pprint
 import toml
 import bs4
 from bs4 import BeautifulSoup
-import json
 
 from src.printer import Printer
 from Exceprtions import *
-
-
-class CustomEncoder(json.JSONEncoder):
-    def default(self, obj):
-        if isinstance(obj, XScripter):
-            return obj.to_json()
-        if isinstance(obj, types.GeneratorType):
-            return [i for i in obj]
-        try:
-            return super().default(obj)
-        except TypeError:
-            return 'python:' + repr(obj)
-
-    pass
-
-
-def jdumper(jkson, indent=None):
-    return json.dumps(jkson, cls=CustomEncoder, indent=indent)
-
-
-def utcnow():
-    return datetime.datetime.now(datetime.timezone.utc)
-
-
-def httpdate(dt):
-    """Return a string representation of a date according to RFC 1123 (HTTP/1.1).
-    The supplied date must be in UTC."""
-    weekday = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"][dt.weekday()]
-    month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"][dt.month - 1]
-    return f"{weekday}, {dt.day} {month} {dt.year} {dt.hour:02d}:{dt.minute:02d}:{dt.second:02d} GMT"
 
 
 class XScripter:
